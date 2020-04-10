@@ -28,7 +28,7 @@
 
 		<div class="container">
 			<div class="row" style=" border-radius: 30px; border-style: solid;">
-				<div class="col-sm-2" style="background-color: green; border-top-left-radius:20px; padding: 10px; border-bottom-left-radius: 20px; overflow:auto; font-size: 90%">
+				<div class="col-sm-2" style="background-color: green; border-top-left-radius:20px; padding: 10px; border-bottom-left-radius: 20px; overflow-x: hidden; height: 570px">
 					<h1 style="margin-top: 20%;">Dịch vụ</h1>
 					<a href="" title="">Tư vấn xây dựng</a><br>
 					<a href="" title="">Tư vấn đầu tư</a><br>
@@ -46,12 +46,12 @@
 					<a href="" title="">Nhà máy công nghiệp</a><br>
 					<a href="" title="">Công trình công cộng</a><br>
 					<a href="" title="">Nhà mẫu, Biệt thự</a><br>
-					<img src="img/hotline.PNG" alt="" style="width: 170px; height: 50px">
+					<img src="img/hotline.PNG" alt="" style="width: 90%; height: 50px">
 					<div style="margin-top: 5%" >
-						<a href="https://www.facebook.com/" target="new"><img src="img/facebook.PNG" style="width:35px;height:35px;"></a>
-						<a href="https://mail.google.com/" target="new"><img src="img/mail.PNG" style="width:35px;height:35px;"></a>
-						<a href="https://www.skype.com/en/" target="new"><img src="img/skype.PNG" style="width:35px;height:35px;"></a>
-						<a href="https://vn.yahoo.com/" target="new"><img src="img/yahoo.jpg" style="width:35px;height:35px;"></a>	
+						<a href="https://www.facebook.com/" target="new"><img src="img/facebook.PNG" style="width:20%;height:auto;"></a>
+						<a href="https://mail.google.com/" target="new"><img src="img/mail.PNG" style="width:20%;height:auto;"></a>
+						<a href="https://www.skype.com/en/" target="new"><img src="img/skype.PNG" style="width:20%;height:auto;"></a>
+						<a href="https://vn.yahoo.com/" target="new"><img src="img/yahoo.jpg" style="width:20%;height:auto;"></a>	
 					</div>
 				</div>
 			
