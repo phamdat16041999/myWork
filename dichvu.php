@@ -138,83 +138,42 @@
 
 				</div>	
 				<div style="margin-top: 10px; margin-bottom: 10px;">
-					<div class="slideshow-container">
+					<?php 
+					if(isset($_GET['nameimg']))
+					{
+						$nameimg = $_GET['nameimg'];
+						?>
+						<img src="img/<?=$nameimg?>" alt="" class="mx-auto d-block" style="width:100%; height: auto;">
+						<?php 
+					}
+					?>
+				</div>
 
-						<div class="mySlides fade">
-							<div class="numbertext">1 / 3</div>
-							<img src="img/2.jpg" style="width:100%">
-							<div class="text">Caption Text</div>
-						</div>
-
-						<div class="mySlides fade">
-							<div class="numbertext">2 / 3</div>
-							<img src="img/3.jpg" style="width:100%">
-							<div class="text">Caption Two</div>
-						</div>
-
-						<div class="mySlides fade">
-							<div class="numbertext">3 / 3</div>
-							<img src="img/4.jpg" style="width:100%">
-							<div class="text">Caption Three</div>
-						</div>
-
-					</div>
-					<br>
-
-					<div style="text-align:center">
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-					</div>
-
-					<script>
-						var slideIndex = 0;
-						showSlides();
-
-						function showSlides() {
-							var i;
-							var slides = document.getElementsByClassName("mySlides");
-							var dots = document.getElementsByClassName("dot");
-							for (i = 0; i < slides.length; i++) {
-								slides[i].style.display = "none";  
-							}
-							slideIndex++;
-							if (slideIndex > slides.length) {slideIndex = 1}    
-								for (i = 0; i < dots.length; i++) {
-									dots[i].className = dots[i].className.replace(" active", "");
-								}
-								slides[slideIndex-1].style.display = "block";  
-								dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-</div>
-
-</div>
+			</div>
 
 
-
-</div>
-<!-- phan lien he  -->
-<div id="footer" style="margin-top: 10%">
-	<div class="endpage">
-		<table border="0" width="100%" cellspacing="0" cellpadding="0">
-			<tbody>
-				<tr>
-					<td align="left" valign="top">
-						<p style="font-size:12px">
-							<strong>Copyright © 2011: </strong><strong>Công Ty TNHH Phát Triển Dự Án Song Nam </strong>- Hotline : <strong>0769 861 168</strong><br>
-							<strong>Trụ sở chính: </strong>98 Trần Quang Khải, P. Tân Định, Quận 1, TP HCM - Tel: + (84.28) 3848 4995 - Fax: + (84.28) 35 265 269<br>
-							<strong>Bình Dương: </strong>401/36 Lê Hồng Phong, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương - Tel / Fax: + (84 650) 385 6689<br>
-							<strong>Song Nam USA Corporation:</strong> 26521 Lilac Hill Dr, Escondido, CA 92026, United States<br>
-						</p>
-					</td>
-				</tr>
-			</tbody></table>
 
 		</div>
+		<!-- phan lien he  -->
+		<div id="footer" style="margin-top: 10%">
+			<div class="endpage">
+				<table border="0" width="100%" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td align="left" valign="top">
+								<p style="font-size:12px">
+									<strong>Copyright © 2011: </strong><strong>Công Ty TNHH Phát Triển Dự Án Song Nam </strong>- Hotline : <strong>0769 861 168</strong><br>
+									<strong>Trụ sở chính: </strong>98 Trần Quang Khải, P. Tân Định, Quận 1, TP HCM - Tel: + (84.28) 3848 4995 - Fax: + (84.28) 35 265 269<br>
+									<strong>Bình Dương: </strong>401/36 Lê Hồng Phong, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương - Tel / Fax: + (84 650) 385 6689<br>
+									<strong>Song Nam USA Corporation:</strong> 26521 Lilac Hill Dr, Escondido, CA 92026, United States<br>
+								</p>
+							</td>
+						</tr>
+					</tbody></table>
 
-	</div>
+				</div>
 
-</body>
-</html>
+			</div>
+
+		</body>
+		</html>
