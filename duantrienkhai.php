@@ -138,7 +138,7 @@
 					for($i=0; $i<count($resultSet); $i++)
 					{
 						?>
-						<div class="col-lg-12 col-md-12">
+						<div class="col-lg-6 col-md-12">
 							<div class="project">
 								<img src="<?=$resultSet[$i]["duongdananh"]?>" alt="Avatar" class="imageProject">
 								<div class="overlay">
