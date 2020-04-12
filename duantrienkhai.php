@@ -129,7 +129,7 @@
 					</script>
 					<div class="project" class="col-lg-6">
 						<?php 
-						$sql = "select * from product";
+						$sql = "select * from duantrienkhai";
 						$stmt = $pdo->prepare($sql);
 						$stmt->setFetchMode(PDO::FETCH_ASSOC);
 						$stmt->execute();
