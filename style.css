@@ -302,7 +302,7 @@ img {vertical-align: middle;}
 .imageProject {
   display: block;
   width: 100%;
-  height: auto;
+  height: 250px;
 
 }
 
@@ -333,4 +333,6 @@ img {vertical-align: middle;}
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  background-color: #D99455;
+  width: 95%
 }
