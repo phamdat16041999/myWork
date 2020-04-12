@@ -14,7 +14,10 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body>	
+	<?php 
+	include 'connect.php';
+	?>
 	
 	<div class="container">
 		<div class="row">
@@ -104,21 +107,11 @@
 			</div>
 
 			<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
-				<div>
-					<div class="topnav" id="myTopnav">
-						<a href="#home" class="active">Home</a>
-						<a href="#news">News</a>
+				<div class="row">
+					<div class="topnav" id="myTopnav" class="col-lg-12">
+						<a href="index.php" class="active">Trang chủ</a>
+						<a href="gioithieu.php">Giới Thiệu</a>
 						<a href="#contact">Contact</a>
-						<div class="dropdown">
-							<button class="dropbtn">Dropdown 
-								<i class="fa fa-caret-down"></i>
-							</button>
-							<div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							</div>
-						</div> 
 						<a href="#about">About</a>
 						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 					</div>
@@ -134,46 +127,51 @@
 							}
 						}
 					</script>
+					<div class="project" class="col-lg-6">
+						<?php 
+						$sql = "select * from product";
+						$stmt = $pdo->prepare($sql);
+						$stmt->setFetchMode(PDO::FETCH_ASSOC);
+						$stmt->execute();
+						$resultSet = $stmt->fetchAll();
+						for($i=0; $i<count($resultSet); $i++)
+						{
+							?>
+							<img src="<?=$resultSet[$i]["duongdananh"]?>" alt="Avatar" class="imageProject">
+							<div class="overlay">
+								<div class="textproject"><?=$resultSet[$i]["tenduan"]?></div>
+							</div>
 
 
-				</div>	
-				<div style="margin-top: 10px; margin-bottom: 10px;">
-					<div class="col-sm-12">
-						<img src="img/dichvu/dichvu1.jpg" alt="" class="mx-auto d-block" style="width:40%; height: 200px; float: left;">
-						
 					</div>
-					<div class="col-sm-12">
-						<img src="img/dichvu/dichvu1.jpg" alt="" class="mx-auto d-block" style="width:40%; height: 200px; float: left;">
-						
+
+					</div>	
+
+				</div>
+
+
+
+			</div>
+			<!-- phan lien he  -->
+			<div id="footer" style="margin-top: 10%">
+				<div class="endpage">
+					<table border="0" width="100%" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<td align="left" valign="top">
+									<p style="font-size:12px">
+										<strong>Copyright © 2011: </strong><strong>Công Ty TNHH Phát Triển Dự Án Song Nam </strong>- Hotline : <strong>0769 861 168</strong><br>
+										<strong>Trụ sở chính: </strong>98 Trần Quang Khải, P. Tân Định, Quận 1, TP HCM - Tel: + (84.28) 3848 4995 - Fax: + (84.28) 35 265 269<br>
+										<strong>Bình Dương: </strong>401/36 Lê Hồng Phong, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương - Tel / Fax: + (84 650) 385 6689<br>
+										<strong>Song Nam USA Corporation:</strong> 26521 Lilac Hill Dr, Escondido, CA 92026, United States<br>
+									</p>
+								</td>
+							</tr>
+						</tbody></table>
+
 					</div>
 
 				</div>
 
-			</div>
-
-
-
-		</div>
-		<!-- phan lien he  -->
-		<div id="footer" style="margin-top: 10%">
-			<div class="endpage">
-				<table border="0" width="100%" cellspacing="0" cellpadding="0">
-					<tbody>
-						<tr>
-							<td align="left" valign="top">
-								<p style="font-size:12px">
-									<strong>Copyright © 2011: </strong><strong>Công Ty TNHH Phát Triển Dự Án Song Nam </strong>- Hotline : <strong>0769 861 168</strong><br>
-									<strong>Trụ sở chính: </strong>98 Trần Quang Khải, P. Tân Định, Quận 1, TP HCM - Tel: + (84.28) 3848 4995 - Fax: + (84.28) 35 265 269<br>
-									<strong>Bình Dương: </strong>401/36 Lê Hồng Phong, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương - Tel / Fax: + (84 650) 385 6689<br>
-									<strong>Song Nam USA Corporation:</strong> 26521 Lilac Hill Dr, Escondido, CA 92026, United States<br>
-								</p>
-							</td>
-						</tr>
-					</tbody></table>
-
-				</div>
-
-			</div>
-
-		</body>
-		</html>
+			</body>
+			</html>
