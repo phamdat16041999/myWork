@@ -36,9 +36,9 @@
 		<div class="row" style=" border-radius: 30px; border-style: solid;">
 			<div class="col-lg-4 col-md-12" style="background-color: #CC681D; border-top-left-radius:20px; padding: 10px; border-bottom-left-radius: 20px; overflow-x: hidden;">
 				<div class="row" style="margin-top: 40px">
-					<div class="col-lg-12 col-md-6">
+<div class="col-lg-12 col-md-6">
 						<div class="sidenav" style="line-height: 1.15;">
-							<button class="dropdown-btn" style="text-align: center;"><h3>Dịch vụ</h3>
+							<button class="dropdown-btn"><h3>Dịch vụ</h3>
 								<i class="fa fa-caret-down"></i>
 							</button>
 							<div class="dropdown-container">
@@ -56,19 +56,10 @@
 					</div>
 					<div class="col-lg-12 col-md-6">
 						<div class="sidenav">
-							<button class="dropdown-btn" style="text-align: center;"><h3>Dự án triển khai</h3>
+							<button class="dropdown-btn">
+								<a href="duantrienkhai.php" title=""><h3>Dự án triển khai</h3></a>
 								<i class="fa fa-caret-down"></i>
 							</button>
-							<div class="dropdown-container">
-								<a href="" title="" class="textContent">- Thi công công trình dân dụng, công nghiệp</a><br>
-								<a href="" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a><br>
-								<a href="" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a><br>
-								<a href="" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a><br>
-								<a href="" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a><br>
-								<a href="" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a><br>
-								<a href="" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a><br>
-								<a href="" title="" class="textContent">- Quản lý dự án công trình xây dựng</a><br>
-							</div>
 
 						</div>
 					</div>
@@ -138,7 +129,7 @@
 					for($i=0; $i<count($resultSet); $i++)
 					{
 						?>
-						<div class="col-lg-6 col-md-12">
+						<div class="col-lg-6 col-md-12" style="margin-top: 15px">
 							<div class="project">
 								<img src="<?=$resultSet[$i]["duongdananh"]?>" alt="Avatar" class="imageProject">
 								<div class="overlay">
