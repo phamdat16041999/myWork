@@ -141,7 +141,9 @@
 							<div class="overlay">
 								<div class="textproject"><?=$resultSet[$i]["tenduan"]?></div>
 							</div>
-
+						<?php 
+						}
+						 ?>
 
 					</div>
 
