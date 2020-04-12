@@ -108,14 +108,15 @@
 
 			<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
 				<div class="row">
-					<div class="topnav" id="myTopnav">
-						<a href="index.php" class="active">Trang chủ</a>
-						<a href="gioithieu.php">Giới Thiệu</a>
-						<a href="#contact">Contact</a>
-						<a href="#about">About</a>
-						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+					<div class="col-lg-12 col-md-12">						
+						<div class="topnav" id="myTopnav">
+							<a href="index.php" class="active">Trang chủ</a>
+							<a href="gioithieu.php">Giới Thiệu</a>
+							<a href="#contact">Contact</a>
+							<a href="#about">About</a>
+							<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+						</div>
 					</div>
-
 
 					<script>
 						function myFunction() {
@@ -137,10 +138,12 @@
 					for($i=0; $i<count($resultSet); $i++)
 					{
 						?>
-						<div class="project">
-							<img src="<?=$resultSet[$i]["duongdananh"]?>" alt="Avatar" class="imageProject">
-							<div class="overlay">
-								<div class="textproject"><?=$resultSet[$i]["tenduan"]?></div>
+						<div class="col-lg-6 col-md-12">
+							<div class="project">
+								<img src="<?=$resultSet[$i]["duongdananh"]?>" alt="Avatar" class="imageProject">
+								<div class="overlay">
+									<div class="textproject"><?=$resultSet[$i]["tenduan"]?></div>
+								</div>
 							</div>
 						</div>
 						<?php 
