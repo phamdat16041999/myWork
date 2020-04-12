@@ -127,17 +127,9 @@
 
 
 				</div>	
-				<div style="margin-top: 10px; margin-bottom: 10px;">
-					<?php 
-					if(isset($_GET['nameimg']))
-					{
-						$nameimg = $_GET['nameimg'];
-						?>
-						<img src="img/<?=$nameimg?>" alt="" class="mx-auto d-block" style="width:100%; height: auto;">
-						<?php 
-					}
-					?>
-				</div>
+					<div>
+						<embed src="datptgch17575.asm1.1639.pdf" type="application/pdf" width="100%" height="500px" />
+					</div>
 
 			</div>
 

@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
-				<img src="img/Logo.png" alt="" style="width: 100%; height: auto;">
+				<a href="index.php" title=""><img src="img/Logo.png" alt="" style="width: 100%; height: auto;"></a>
 			</div>
 			<div class="col-sm-10" >
 				<h2 style="text-align: center; width: 80%; font-weight: 500;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h2>
@@ -39,14 +39,14 @@
 								<i class="fa fa-caret-down"></i>
 							</button>
 							<div class="dropdown-container">
-								<a href="" title="" class="textContent">- Thi công công trình dân dụng, công nghiệp</a><br>
-								<a href="" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a><br>
-								<a href="" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a><br>
-								<a href="" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a><br>
-								<a href="" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a><br>
-								<a href="" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a><br>
-								<a href="" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a><br>
-								<a href="" title="" class="textContent">- Quản lý dự án công trình xây dựng</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu1.jpg" title="" class="textContent">- Thi công công trình dân dụng, công nghiệp</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu2.jpg" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu3.jpg" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu4.jpg" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu5.jpg" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu6.jpg" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu7.jpg" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu8.jpg" title="" class="textContent">- Quản lý dự án công trình xây dựng</a><br>
 							</div>
 
 						</div>
@@ -138,7 +138,15 @@
 
 				</div>	
 				<div style="margin-top: 10px; margin-bottom: 10px;">
-					<img src="img/dichvu1.jpg" alt="" class="mx-auto d-block" style="width:100%; height: auto;">
+					<div class="col-sm-12">
+						<img src="img/dichvu/dichvu1.jpg" alt="" class="mx-auto d-block" style="width:40%; height: 200px; float: left;">
+						
+					</div>
+					<div class="col-sm-12">
+						<img src="img/dichvu/dichvu1.jpg" alt="" class="mx-auto d-block" style="width:40%; height: 200px; float: left;">
+						
+					</div>
+
 				</div>
 
 			</div>

@@ -15,29 +15,14 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
-<<<<<<< HEAD
 	
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
-				<a href="dichvu1.php" title=""><img src="img/Logo.png" alt="" style="width: 100%; height: auto;"></a>
+				<a href="index.php" title=""><img src="img/Logo.png" alt="" style="width: 100%; height: auto;"></a>
 			</div>
 			<div class="col-sm-10" >
 				<h2 style="text-align: center; width: 80%; font-weight: 500;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h2>
-=======
-=======
->>>>>>> parent of c3f38d8... a
-	<div id="container-fluid">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-2">
-					<img src="img/Logo.png" alt="" style="width: 100%; height: auto;">
-				</div>
-				<div class="col-sm-10" >
-					<h2 style="text-align: center; width: 80%; font-weight: 500;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h2>
-				</div>
->>>>>>> parent of c3f38d8... a
 			</div>
 		</div>
 	</div>
@@ -54,14 +39,14 @@
 								<i class="fa fa-caret-down"></i>
 							</button>
 							<div class="dropdown-container">
-								<a href="dichvu.php?nameimg=dv1.jpg" title="" class="textContent">- Thi công công trình dân dụng, công nghiệp</a><br>
-								<a href="dichvu.php?nameimg=dichvu2.jpg" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a><br>
-								<a href="dichvu.php?nameimg=dichvu3.jpg" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a><br>
-								<a href="dichvu.php?nameimg=dichvu4.jpg" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a><br>
-								<a href="dichvu.php?nameimg=dichvu5.jpg" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a><br>
-								<a href="dichvu.php?nameimg=dichvu6.jpg" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a><br>
-								<a href="dichvu.php?nameimg=dichvu7.jpg" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a><br>
-								<a href="dichvu.php?nameimg=dichvu8.jpg" title="" class="textContent">- Quản lý dự án công trình xây dựng</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu1.jpg" title="" class="textContent">- Thi công công trình dân dụng, công nghiệp</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu2.jpg" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu3.jpg" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu4.jpg" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu5.jpg" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu6.jpg" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu7.jpg" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu8.jpg" title="" class="textContent">- Quản lý dự án công trình xây dựng</a><br>
 							</div>
 
 						</div>
@@ -104,7 +89,7 @@
 					<div class="col-lg-12" style="text-align: center;">
 						<div>
 							<img src="img/hotline.PNG" alt="" style="max-width: 100%; height: 50px;">
-							<div style="margin-top: 5px; text-align: center;" >
+							<div style="margin-top: 5px;" >
 								<a href="https://www.facebook.com/" target="new"><img src="img/facebook.PNG" class="imgContact"></a>
 								<a href="https://mail.google.com/" target="new"><img src="img/mail.PNG" class="imgContact"></a>
 								<a href="https://www.skype.com/en/" target="new"><img src="img/skype.PNG" class="imgContact"></a>
@@ -121,19 +106,9 @@
 			<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
 				<div>
 					<div class="topnav" id="myTopnav">
-						<a href="#home" class="active">Home</a>
-						<a href="#news">News</a>
-						<a href="#contact">Contact</a>
-						<div class="dropdown">
-							<button class="dropbtn">Dropdown 
-								<i class="fa fa-caret-down"></i>
-							</button>
-							<div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							</div>
-						</div> 
+						<a href="index.php" class="active">Trang chủ</a>
+						<a href="gioithieu.php">Giới thiệu</a>
+						<a href="#contact">Contact</a> 
 						<a href="#about">About</a>
 						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 					</div>
@@ -157,19 +132,19 @@
 
 						<div class="mySlides fade">
 							<div class="numbertext">1 / 3</div>
-							<img src="img/2.jpg" style="width:100%">
+							<img src="img/2.jpg" style="width:100%; height: 400px;">
 							<div class="text">Caption Text</div>
 						</div>
 
 						<div class="mySlides fade">
 							<div class="numbertext">2 / 3</div>
-							<img src="img/3.jpg" style="width:100%">
+							<img src="img/3.jpg" style="width:100%; height: 400px;">
 							<div class="text">Caption Two</div>
 						</div>
 
 						<div class="mySlides fade">
 							<div class="numbertext">3 / 3</div>
-							<img src="img/4.jpg" style="width:100%">
+							<img src="img/4.jpg" style="width:100%; height: 400px;">
 							<div class="text">Caption Three</div>
 						</div>
 
