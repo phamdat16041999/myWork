@@ -108,7 +108,7 @@
 
 			<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
 				<div class="row">
-					<div class="topnav" id="myTopnav" class="col-lg-12">
+					<div class="topnav" id="myTopnav" class="col-lg-12 col-md-12">
 						<a href="index.php" class="active">Trang chủ</a>
 						<a href="gioithieu.php">Giới Thiệu</a>
 						<a href="#contact">Contact</a>
