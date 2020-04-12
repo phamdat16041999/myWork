@@ -306,13 +306,13 @@ img {vertical-align: middle;}
 
 }
 
-@media screen and (max-width: 992px) {s
+@media screen and (max-width: 992px) {
   .imageProject {
     display: block;
     width: 100%;
     height: 500px;
   }
-
+}
   .overlay {
     position: absolute;
     top: 0;
