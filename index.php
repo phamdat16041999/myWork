@@ -15,6 +15,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
 	
 	<div class="container">
 		<div class="row">
@@ -23,6 +24,17 @@
 			</div>
 			<div class="col-sm-10" >
 				<h2 style="text-align: center; width: 80%; font-weight: 500;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h2>
+=======
+	<div id="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<img src="img/Logo.png" alt="" style="width: 100%; height: auto;">
+				</div>
+				<div class="col-sm-10" >
+					<h2 style="text-align: center; width: 80%; font-weight: 500;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h2>
+				</div>
+>>>>>>> parent of c3f38d8... a
 			</div>
 		</div>
 	</div>
@@ -89,7 +101,7 @@
 					<div class="col-lg-12" style="text-align: center;">
 						<div>
 							<img src="img/hotline.PNG" alt="" style="max-width: 100%; height: 50px;">
-							<div style="margin-top: 5px;" >
+							<div style="margin-top: 5px; text-align: center;" >
 								<a href="https://www.facebook.com/" target="new"><img src="img/facebook.PNG" class="imgContact"></a>
 								<a href="https://mail.google.com/" target="new"><img src="img/mail.PNG" class="imgContact"></a>
 								<a href="https://www.skype.com/en/" target="new"><img src="img/skype.PNG" class="imgContact"></a>
