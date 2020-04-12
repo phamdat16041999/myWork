@@ -16,6 +16,7 @@
 </head>
 <body>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	<div class="container">
 		<div class="row">
@@ -25,6 +26,8 @@
 			<div class="col-sm-10" >
 				<h2 style="text-align: center; width: 80%; font-weight: 500;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h2>
 =======
+=======
+>>>>>>> parent of c3f38d8... a
 	<div id="container-fluid">
 		<div class="container">
 			<div class="row">
