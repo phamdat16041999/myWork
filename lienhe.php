@@ -190,12 +190,12 @@
 						$tieudegui=$_POST['tieudegui'];
 						$noidung=$_POST['noidung'];
 						$date = date("Y-m-d");
-						$add= "lienhe (hoten, diachi, dienthoai, email, mucdichgui, tieudegui,noidung, ngay)values('".$hoten."', '".$diachi."', '".$dienthoai."', '" .$email."', '" .$mucdichgui."', '" .$tieudegui."', '" .$noidung."','" .$date."')";
+						$add= "lienhe (hoten, diachi, dienthoai, email, mucdichgui, tieudegui,noidung, ngay) values('".$hoten."', '".$diachi."', '".$dienthoai."', '" .$email."', '" .$mucdichgui."', '" .$tieudegui."', '" .$noidung."','" .$date."')";
 						$stmt = $pdo->prepare($add);	
 						$stmt->execute();
 						if($stmt!= null){
-							echo "Product has add successfully!";
 							header("Location: ./index.php");
+							echo "Product has add successfully!";
 						}
 						else
 						{
