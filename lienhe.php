@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
@@ -98,11 +98,12 @@
 				<div>
 					<div class="topnav" id="myTopnav">
 						<a href="index.php" class="active">Trang chủ</a>
-						<a href="gioithieu.php">Giới thiệu</a>
-						<a href="lienhe.php">Liên hệ</a> 
+						<a href="gioithieu.php">Giới Thiệu</a>
+						<a href="#contact">Contact</a>
 						<a href="#about">About</a>
 						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 					</div>
+
 
 
 					<script>
@@ -118,84 +119,124 @@
 
 
 				</div>	
+
 				<div style="margin-top: 100px; margin-bottom: 10px;">
-					<div class="slideshow-container">
+					<table style="width:100%; border: 1px solid black; background-color: #F8FAD5;">
+						<tr>
+							<th colspan="2">
+								<h3 style="margin-top: 20px;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h3>
+								<div class="textlienhe">
+									- Địa chỉ: Ô111, Lô A, KĐT Đại Kim - Định Công, 
+									Phường Định Công, Quận Hoàng Mai, TP. Hà Nội
+								</div>
+								<div class="textlienhe">
+									- Tel: 02462.594.592
+								</div>
+								<div class="textlienhe">
+									- Fax: 0243.6413.412
+								</div>
 
-						<div class="mySlides fade">
-							<div class="numbertext">1 / 3</div>
-							<img src="img/2.jpg" style="width:100%; height: 400px;">
-							<div class="text">Caption Text</div>
-						</div>
+							</th>
+						</tr>
+						<form action="" method="POST" accept-charset="utf-8">
+							<tr>
+								<td><div class="textlienhe">Họ và tên :</div></td>
+								<td><input type="text" name="hoten" style="width: 80%"></td>
+							</tr>
+							<tr>
+								<td><div class="textlienhe">Địa chỉ :</div></td>
+								<td><input type="text" name="diachi" style="width: 80%"></td>
+							</tr>
+							<tr>
+								<td><div class="textlienhe">Số điện thoại:</div></td>
+								<td><input type="text" name="dienthoai" style="width: 80%"></td>
+							</tr>
+							<tr>
+								<td><div class="textlienhe">Email :</div></td>
+								<td><input type="text" name="email" style="width: 80%"></td>
+							</tr>
+							<tr>
+								<td><div class="textlienhe">Mục đích gửi:</div></td>
+								<td>									
+									<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
+										<option value="4">Hỗ trợ khách hàng</option>
+										<option value="7">Góp ý</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><div class="textlienhe">Tiêu để gửi :</div></td>
+								<td><input type="text" name="tieudegui" style="width: 80%"></td>
+							</tr>
+							<tr>
+								<td><div class="textlienhe">Nội dung gửi :</div></td>
+								<td><textarea name="noidung" style="width: 80%; overflow: auto;height: 200px"></textarea></td>
+							</tr>
+							<tr>
+								<td colspan="2" style="text-align: center;"><input type="submit" name="" value="Đồng ý gửi"></td>
+							</tr>
+						</form>
+					</table>
+					<?php 
+					if(isset($_POST['hoten'])&&isset($_POST['diachi'])&&isset($_POST['dienthoai'])&&isset($_POST['email'])&&isset($_POST['mucdichgui'])&&isset($_POST['tieudegui'])&&isset($_POST['noidung']))
+					{
+						$hoten=$_POST['hoten'];
+						$diachi=$_POST['diachi'];
+						$dienthoai=$_POST['dienthoai'];
+						$email=$_POST['email'];
+						$mucdichgui=$_POST['mucdichgui'];
+						$tieudegui=$_POST['tieudegui'];
+						$noidung=$_POST['noidung'];
+						$date = date("Y-m-d");
+						$add= "lienhe (hoten, diachi, dienthoai, email, mucdichgui, tieudegui,noidung, ngay)values('".$hoten."', '".$diachi."', '".$dienthoai."', '" .$email."', '" .$mucdichgui."', '" .$tieudegui."', '" .$noidung."','" .$date."')";
+						$stmt = $pdo->prepare($add);	
+						$stmt->execute();
+						if($stmt!= null){
+							echo "Product has add successfully!";
+							header("Location: ./index.php");
+						}
+						else
+						{
+							echo "Try again";
+						}
+					}
+					?>
 
-						<div class="mySlides fade">
-							<div class="numbertext">2 / 3</div>
-							<img src="img/3.jpg" style="width:100%; height: 400px;">
-							<div class="text">Caption Two</div>
-						</div>
-
-						<div class="mySlides fade">
-							<div class="numbertext">3 / 3</div>
-							<img src="img/4.jpg" style="width:100%; height: 400px;">
-							<div class="text">Caption Three</div>
-						</div>
-
-					</div>
-					<br>
-
-					<div style="text-align:center">
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-					</div>
-
-					<script>
-						var slideIndex = 0;
-						showSlides();
-
-						function showSlides() {
-							var i;
-							var slides = document.getElementsByClassName("mySlides");
-							var dots = document.getElementsByClassName("dot");
-							for (i = 0; i < slides.length; i++) {
-								slides[i].style.display = "none";  
-							}
-							slideIndex++;
-							if (slideIndex > slides.length) {slideIndex = 1}    
-								for (i = 0; i < dots.length; i++) {
-									dots[i].className = dots[i].className.replace(" active", "");
-								}
-								slides[slideIndex-1].style.display = "block";  
-								dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-</div>
-
-</div>
 
 
 
-</div>
-<!-- phan lien he  -->
-<div id="footer" style="margin-top: 10%">
-	<div class="endpage">
-		<table border="0" width="100%" cellspacing="0" cellpadding="0">
-			<tbody>
-				<tr>
-					<td align="left" valign="top">
-						<p style="font-size:12px">
-							<strong>Copyright © 2011: </strong><strong>Công Ty TNHH Phát Triển Dự Án Song Nam </strong>- Hotline : <strong>0769 861 168</strong><br>
-							<strong>Trụ sở chính: </strong>98 Trần Quang Khải, P. Tân Định, Quận 1, TP HCM - Tel: + (84.28) 3848 4995 - Fax: + (84.28) 35 265 269<br>
-							<strong>Bình Dương: </strong>401/36 Lê Hồng Phong, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương - Tel / Fax: + (84 650) 385 6689<br>
-							<strong>Song Nam USA Corporation:</strong> 26521 Lilac Hill Dr, Escondido, CA 92026, United States<br>
-						</p>
-					</td>
-				</tr>
-			</tbody></table>
+
+
+
+
+
+				</div>
+
+			</div>
+
+
 
 		</div>
+		<!-- phan lien he  -->
+		<div id="footer" style="margin-top: 10%">
+			<div class="endpage">
+				<table border="0" width="100%" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td align="left" valign="top">
+								<p style="font-size:12px">
+									<strong>Copyright © 2011: </strong><strong>Công Ty TNHH Phát Triển Dự Án Song Nam </strong>- Hotline : <strong>0769 861 168</strong><br>
+									<strong>Trụ sở chính: </strong>98 Trần Quang Khải, P. Tân Định, Quận 1, TP HCM - Tel: + (84.28) 3848 4995 - Fax: + (84.28) 35 265 269<br>
+									<strong>Bình Dương: </strong>401/36 Lê Hồng Phong, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương - Tel / Fax: + (84 650) 385 6689<br>
+									<strong>Song Nam USA Corporation:</strong> 26521 Lilac Hill Dr, Escondido, CA 92026, United States<br>
+								</p>
+							</td>
+						</tr>
+					</tbody></table>
 
-	</div>
+				</div>
 
-</body>
-</html>
+			</div>
+
+		</body>
+		</html>
