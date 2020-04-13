@@ -82,8 +82,8 @@
 							<img src="img/hotline.jpg" alt="" style="max-width: 100%; height: 50px;">
 							<div style="margin-top: 5px;" >
 								<a href="https://www.facebook.com/" target="new"><img src="img/facebook.png" class="imgContact"></a>
-								<a href="https://mail.google.com/" target="new"><img src="img/mail.PNG" class="imgContact"></a>
-								<a href="https://www.skype.com/en/" target="new"><img src="img/skype.PNG" class="imgContact"></a>
+								<a href="https://mail.google.com/" target="new"><img src="img/mail.png" class="imgContact"></a>
+								<a href="https://www.skype.com/en/" target="new"><img src="img/skype.png" class="imgContact"></a>
 								<a href="https://vn.yahoo.com/" target="new"><img src="img/yahoo.jpg" class="imgContact"></a>	
 							</div>
 						</div>
