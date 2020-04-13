@@ -40,13 +40,13 @@
 							</button>
 							<div class="dropdown-container">
 								<a href="dichvu.php?nameimg=dichvu/dichvu1.png" title="" class="textContent">- Thi công công trình dân dụng, công nghiệp</a><br>
-								<a href="dichvu.php?nameimg=dichvu/dichvu2.jpg" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a><br>
-								<a href="dichvu.php?nameimg=dichvu/dichvu3.jpg" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a><br>
-								<a href="dichvu.php?nameimg=dichvu/dichvu4.jpg" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a><br>
-								<a href="dichvu.php?nameimg=dichvu/dichvu5.jpg" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a><br>
-								<a href="dichvu.php?nameimg=dichvu/dichvu6.jpg" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a><br>
-								<a href="dichvu.php?nameimg=dichvu/dichvu7.jpg" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a><br>
-								<a href="dichvu.php?nameimg=dichvu/dichvu8.jpg" title="" class="textContent">- Quản lý dự án công trình xây dựng</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu2.png" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu3.png" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu4.png" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu5.png" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu6.png" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu7.png" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu8.png" title="" class="textContent">- Quản lý dự án công trình xây dựng</a><br>
 							</div>
 
 						</div>
@@ -79,9 +79,9 @@
 					</script>
 					<div class="col-lg-12" style="text-align: center;">
 						<div>
-							<img src="img/hotline.PNG" alt="" style="max-width: 100%; height: 50px;">
+							<img src="img/hotline.jpg" alt="" style="max-width: 100%; height: 50px;">
 							<div style="margin-top: 5px;" >
-								<a href="https://www.facebook.com/" target="new"><img src="img/facebook.PNG" class="imgContact"></a>
+								<a href="https://www.facebook.com/" target="new"><img src="img/facebook.png" class="imgContact"></a>
 								<a href="https://mail.google.com/" target="new"><img src="img/mail.PNG" class="imgContact"></a>
 								<a href="https://www.skype.com/en/" target="new"><img src="img/skype.PNG" class="imgContact"></a>
 								<a href="https://vn.yahoo.com/" target="new"><img src="img/yahoo.jpg" class="imgContact"></a>	
