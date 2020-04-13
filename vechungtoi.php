@@ -122,7 +122,7 @@
 					<div class="col-lg-6 col-md-12" style="margin-top: 15px">
 						<a href="thungo.php" title="">
 							<div class="project">
-								<img src="img/thungo.png" alt="Avatar" class="imageProject">
+								<img src="img/thungo.png" alt="Avatar" class="imageProject" style="background-color: white;">
 								<div class="overlay">
 									<div class="textproject">Thư ngỏ</div>
 								</div>
