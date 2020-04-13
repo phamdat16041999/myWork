@@ -34,7 +34,7 @@
 
 	<div class="container">
 		<div class="row" style=" border-radius: 30px; border-style: solid;">
-			<div class="col-lg-4 col-md-12" style="background-color: #CC681D; border-top-left-radius:20px; padding: 10px; border-bottom-left-radius: 20px; overflow-x: hidden;">
+			<div class="col-lg-4 col-md-12" id="boderleft">
 				<div class="row" style="margin-top: 40px">
 <div class="col-lg-12 col-md-6">
 						<div class="sidenav" style="line-height: 1.15;">
@@ -97,7 +97,7 @@
 
 			</div>
 
-			<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+			<div class="col-lg-8 col-md-12" id="boderright">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">						
 						<div class="topnav" id="myTopnav">

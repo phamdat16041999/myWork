@@ -14,7 +14,10 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body>	
+	<?php 
+	include 'connect.php';
+	?>
 	
 	<div class="container">
 		<div class="row">
@@ -95,15 +98,16 @@
 			</div>
 
 			<div class="col-lg-8 col-md-12" id="boderright">
-				<div>
-					<div class="topnav" id="myTopnav">
-						<a href="index.php" class="active">Trang chủ</a>
-						<a href="gioithieu.php">Giới Thiệu</a>
-						<a href="lienhe.php">Liên hệ</a> 
-						<a href="#about">About</a>
-						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+				<div class="row">
+					<div class="col-lg-12 col-md-12">						
+						<div class="topnav" id="myTopnav">
+							<a href="index.php" class="active">Trang chủ</a>
+							<a href="gioithieu.php">Giới Thiệu</a>
+							<a href="lienhe.php">Liên hệ</a> 
+							<a href="#about">About</a>
+							<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+						</div>
 					</div>
-
 
 					<script>
 						function myFunction() {
@@ -115,12 +119,31 @@
 							}
 						}
 					</script>
+					<div class="col-lg-6 col-md-12" style="margin-top: 15px">
+						<a href="thungo.php" title="">
+							<div class="project">
+								<img src="img/thungo.png" alt="Avatar" class="imageProject">
+								<div class="overlay">
+									<div class="textproject">Thư ngỏ</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-6 col-md-12" style="margin-top: 15px">
+						<a href="gioithieu.php" title="">
+							<div class="project">
+								<img src="img/gioithieu.png" alt="Avatar" class="imageProject">
+								<div class="overlay">
+									<div class="textproject">Giới thiệu công ty</div>
+								</div>
+							</div>
+						</a>
+					</div>
 
+
+					
 
 				</div>	
-					<div>
-						<embed src="gioi thieu cong ty.pdf" type="application/pdf" width="100%" height="500px" />
-					</div>
 
 			</div>
 
