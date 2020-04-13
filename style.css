@@ -361,3 +361,17 @@ img {vertical-align: middle;}
 
 	}
 }
+#boderright{
+	background-color: #CC681D; 
+	border-top-right-radius: 20px; 
+	border-bottom-right-radius: 20px;
+
+}
+@media screen and (max-width: 992px) {
+	#boderright{ 
+		border-top-right-radius: 0px; 
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+
+	}
+}

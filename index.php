@@ -94,7 +94,7 @@
 
 			</div>
 
-			<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+			<div class="col-lg-8 col-md-12" id="boderright">
 				<div>
 					<div class="topnav" id="myTopnav">
 						<a href="index.php" class="active">Trang chủ</a>
