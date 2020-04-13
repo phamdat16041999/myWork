@@ -101,7 +101,7 @@
 					<div class="topnav" id="myTopnav">
 						<a href="index.php" class="active">Trang chủ</a>
 						<a href="gioithieu.php">Giới Thiệu</a>
-						<a href="#contact">Contact</a>
+						<a href="lienhe.php">Liên hệ</a> 
 						<a href="#about">About</a>
 						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 					</div>
@@ -161,8 +161,8 @@
 								<td><div class="textlienhe">Mục đích gửi:</div></td>
 								<td>									
 									<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
-										<option value="4">Hỗ trợ khách hàng</option>
-										<option value="7">Góp ý</option>
+										<option value="Hỗ trợ khách hàng">Hỗ trợ khách hàng</option>
+										<option value="Góp ý">Góp ý</option>
 									</select>
 								</td>
 							</tr>
