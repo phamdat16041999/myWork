@@ -139,7 +139,16 @@
 							</div>
 						</a>
 					</div>
-
+					<div class="col-lg-6 col-md-12" style="margin-top: 15px">
+						<a href="gioithieu.php" title="">
+							<div class="project">
+								<img src="img/tamnhinsumenh.png" alt="Avatar" class="imageProject">
+								<div class="overlay">
+									<div class="textproject">Tầm nhìn, sứ mệnh</div>
+								</div>
+							</div>
+						</a>
+					</div>
 
 					
 
