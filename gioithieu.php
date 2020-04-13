@@ -98,8 +98,8 @@
 				<div>
 					<div class="topnav" id="myTopnav">
 						<a href="index.php" class="active">Trang chủ</a>
-						<a href="gioithieu.php">Giới Thiệu</a>
-						<a href="lienhe.php">Liên hệ</a> 
+						<a href="vechungtoi.php">Về chúng tôi</a>
+						<a href="lienhe.php">Liên hệ</a>
 						<a href="#about">About</a>
 						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 					</div>
@@ -118,9 +118,9 @@
 
 
 				</div>	
-					<div>
-						<embed src="gioi thieu cong ty.pdf" type="application/pdf" width="100%" height="500px" />
-					</div>
+				<div>
+					<embed src="gioi thieu cong ty.pdf" type="application/pdf" width="100%" height="500px" />
+				</div>
 
 			</div>
 
