@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
@@ -15,7 +15,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	
+		<?php 
+	include 'connect.php';
+	?>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
