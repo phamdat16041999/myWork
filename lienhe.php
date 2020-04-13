@@ -190,7 +190,7 @@
 						$tieudegui=$_POST['tieudegui'];
 						$noidung=$_POST['noidung'];
 						$date = date("Y-m-d");
-						$add= "lienhe (hoten, diachi, dienthoai, email, mucdichgui, tieudegui,noidung, ngay) values('".$hoten."', '".$diachi."', '".$dienthoai."', '" .$email."', '" .$mucdichgui."', '" .$tieudegui."', '" .$noidung."','" .$date."')";
+						$add= "insert into lienhe (hoten, diachi, dienthoai, email, mucdichgui, tieudegui,noidung, ngay) values('".$hoten."', '".$diachi."', '".$dienthoai."', '" .$email."', '" .$mucdichgui."', '" .$tieudegui."', '" .$noidung."','" .$date."')";
 						$stmt = $pdo->prepare($add);	
 						$stmt->execute();
 						if($stmt!= null){
