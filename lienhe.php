@@ -50,7 +50,7 @@
 					<table style="width:100%; border: 1px solid black; background-color: #F8FAD5;">
 						<tr>
 							<th colspan="2">
-								<h3 style="margin-top: 20px;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h3>
+								<h3 style="margin-top: 20px; text-align: center;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h3>
 								<div class="textlienhe">
 									- Địa chỉ: Ô111, Lô A, KĐT Đại Kim - Định Công, 
 									Phường Định Công, Quận Hoàng Mai, TP. Hà Nội
