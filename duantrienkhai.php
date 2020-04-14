@@ -14,7 +14,7 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>	
+<body style="height: 100%;">	
 	<?php 
 	include 'connect.php';
 	?>
