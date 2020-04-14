@@ -44,6 +44,7 @@
 					<?php 
 					include 'menuTop.php';
 					?>
+					</div>
 					
 					<?php 
 					$sql = "select * from duantrienkhai";
@@ -66,8 +67,8 @@
 					}
 					?>
 
-					
-
+						
+					</div>
 				</div>	
 
 			</div>
