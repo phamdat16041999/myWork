@@ -41,62 +41,62 @@
 			<div class="col-lg-8 col-md-12" id="boderright">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">						
-						<?php 
-						include 'menuTop.php';
-						?>
-						<div class="col-lg-6 col-md-12" style="margin-top: 15px">
-							<a href="thungo.php" title="">
-								<div class="project">
-									<img src="img/thungo.png" alt="Avatar" class="imageProject" style="background-color: white;">
-									<div class="overlay">
-										<div class="textproject">Thư ngỏ</div>
-									</div>
+					<?php 
+					include 'menuTop.php';
+					?>
+					<div class="col-lg-6 col-md-12" style="margin-top: 15px">
+						<a href="thungo.php" title="">
+							<div class="project">
+								<img src="img/thungo.png" alt="Avatar" class="imageProject" style="background-color: white;">
+								<div class="overlay">
+									<div class="textproject">Thư ngỏ</div>
 								</div>
-							</a>
-						</div>
-						<div class="col-lg-6 col-md-12" style="margin-top: 15px">
-							<a href="gioithieu.php" title="">
-								<div class="project">
-									<img src="img/gioithieu.png" alt="Avatar" class="imageProject">
-									<div class="overlay">
-										<div class="textproject">Giới thiệu công ty</div>
-									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-6 col-md-12" style="margin-top: 15px">
+						<a href="gioithieu.php" title="">
+							<div class="project">
+								<img src="img/gioithieu.png" alt="Avatar" class="imageProject">
+								<div class="overlay">
+									<div class="textproject">Giới thiệu công ty</div>
 								</div>
-							</a>
-						</div>
-						<div class="col-lg-6 col-md-12" style="margin-top: 15px">
-							<a href="tamnhinsumenh.php" title="">
-								<div class="project">
-									<img src="img/tamnhinsumenh.png" alt="Avatar" class="imageProject">
-									<div class="overlay">
-										<div class="textproject">Tầm nhìn, sứ mệnh</div>
-									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-6 col-md-12" style="margin-top: 15px">
+						<a href="tamnhinsumenh.php" title="">
+							<div class="project">
+								<img src="img/tamnhinsumenh.png" alt="Avatar" class="imageProject">
+								<div class="overlay">
+									<div class="textproject">Tầm nhìn, sứ mệnh</div>
 								</div>
-							</a>
-						</div>
-						<div class="col-lg-6 col-md-12" style="margin-top: 15px;">
-							<a href="sodocongty.php" title="">
-								<div class="project">
-									<img src="img/iconsodocongty.png" alt="Avatar" class="imageProject" style="background-color: white;">
-									<div class="overlay">
-										<div class="textproject">Sơ đồ tổ chức công ty</div>
-									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-6 col-md-12" style="margin-top: 15px;">
+						<a href="sodocongty.php" title="">
+							<div class="project">
+								<img src="img/iconsodocongty.png" alt="Avatar" class="imageProject" style="background-color: white;">
+								<div class="overlay">
+									<div class="textproject">Sơ đồ tổ chức công ty</div>
 								</div>
-							</a>
-						</div>
-						
+							</div>
+						</a>
+					</div>
+					
 
-					</div>	
-
-				</div>
-
-
+				</div>	
 
 			</div>
-			<!-- phan lien he  -->
-			<?php 
-			include 'enpage.php';
-			?>
+
+
+
+		</div>
+		<!-- phan lien he  -->
+	<?php 
+	include 'enpage.php';
+	?>
 
 		</body>
 		</html>
