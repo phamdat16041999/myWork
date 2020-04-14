@@ -4,7 +4,6 @@
 	<title></title>
 </head>
 <body>
-	<div class="col-lg-12 col-md-12">
 		<div class="topnav" id="myTopnav">
 			<a href="index.php" class="active">Trang chủ</a>
 			<a href="vechungtoi.php">Về chúng tôi</a>
@@ -24,6 +23,5 @@
 				}
 			}
 		</script>
-	</div>
 </body>
 </html>

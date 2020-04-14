@@ -52,25 +52,9 @@
 			<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<div class="topnav" id="myTopnav">
-							<a href="index.php" class="active">Trang chủ</a>
-							<a href="vechungtoi.php">Về chúng tôi</a>
-							<a href="lienhe.php">Liên hệ</a> 
-							<a href="#about">About</a>
-							<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-						</div>
-
-
-						<script>
-							function myFunction() {
-								var x = document.getElementById("myTopnav");
-								if (x.className === "topnav") {
-									x.className += " responsive";
-								} else {
-									x.className = "topnav";
-								}
-							}
-						</script>
+						<?php 
+						include 'menuTop.php';
+						?>
 					</div>
 					<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; ">
 						<img src="img/sodotochuccongty.png" alt="" style="max-width: 100%; height: auto;">
@@ -83,9 +67,9 @@
 
 		</div>
 		<!-- phan lien he  -->
-	<?php 
-	include 'enpage.php';
-	?>
+		<?php 
+		include 'enpage.php';
+		?>
 
-		</body>
-		</html>
+	</body>
+	</html>
