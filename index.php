@@ -36,64 +36,57 @@
 			?>
 
 			<div class="col-lg-8 col-md-12" id="boderright">
-				<div class="row">
-					<?php 
-					include 'menuTop.php';
-					?>
-					<div lass="col-lg-12 col-md-12">
-						<div style="margin-top: 100px; margin-bottom: 10px;">
-							<div class="slideshow-container">
+				<div style="margin-top: 100px; margin-bottom: 10px;">
+					<div class="slideshow-container">
 
-								<div class="mySlides fade">
-									<div class="numbertext">1 / 3</div>
-									<img src="img/2.jpg" style="width:100%; height: 400px;">
-									<div class="text">Caption Text</div>
-								</div>
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 3</div>
+							<img src="img/2.jpg" style="width:100%; height: 400px;">
+							<div class="text">Caption Text</div>
+						</div>
 
-								<div class="mySlides fade">
-									<div class="numbertext">2 / 3</div>
-									<img src="img/3.jpg" style="width:100%; height: 400px;">
-									<div class="text">Caption Two</div>
-								</div>
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 3</div>
+							<img src="img/3.jpg" style="width:100%; height: 400px;">
+							<div class="text">Caption Two</div>
+						</div>
 
-								<div class="mySlides fade">
-									<div class="numbertext">3 / 3</div>
-									<img src="img/4.jpg" style="width:100%; height: 400px;">
-									<div class="text">Caption Three</div>
-								</div>
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 3</div>
+							<img src="img/4.jpg" style="width:100%; height: 400px;">
+							<div class="text">Caption Three</div>
+						</div>
 
-							</div>
-							<br>
+					</div>
+					<br>
 
-							<div style="text-align:center">
-								<span class="dot"></span> 
-								<span class="dot"></span> 
-								<span class="dot"></span> 
-							</div>
+					<div style="text-align:center">
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+					</div>
 
-							<script>
-								var slideIndex = 0;
-								showSlides();
+					<script>
+						var slideIndex = 0;
+						showSlides();
 
-								function showSlides() {
-									var i;
-									var slides = document.getElementsByClassName("mySlides");
-									var dots = document.getElementsByClassName("dot");
-									for (i = 0; i < slides.length; i++) {
-										slides[i].style.display = "none";  
-									}
-									slideIndex++;
-									if (slideIndex > slides.length) {slideIndex = 1}    
-										for (i = 0; i < dots.length; i++) {
-											dots[i].className = dots[i].className.replace(" active", "");
-										}
-										slides[slideIndex-1].style.display = "block";  
-										dots[slideIndex-1].className += " active";
+						function showSlides() {
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("dot");
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+							}
+							slideIndex++;
+							if (slideIndex > slides.length) {slideIndex = 1}    
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex-1].style.display = "block";  
+								dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
-</div>
-</div>
 </div>
 
 </div>
