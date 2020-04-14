@@ -36,80 +36,64 @@
 			?>
 
 			<div class="col-lg-8 col-md-12" id="boderright">
-				<div>
-					<div class="topnav" id="myTopnav">
-						<a href="index.php" class="active">Trang chủ</a>
-						<a href="vechungtoi.php">Về chúng tôi</a>
-						<a href="lienhe.php">Liên hệ</a> 
-						<a href="#about">About</a>
-						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-					</div>
+				<div class="row">
+					<?php 
+					include 'menuTop.php';
+					?>
+					<div lass="col-lg-12 col-md-12">
+						<div style="margin-top: 100px; margin-bottom: 10px;">
+							<div class="slideshow-container">
 
+								<div class="mySlides fade">
+									<div class="numbertext">1 / 3</div>
+									<img src="img/2.jpg" style="width:100%; height: 400px;">
+									<div class="text">Caption Text</div>
+								</div>
 
-					<script>
-						function myFunction() {
-							var x = document.getElementById("myTopnav");
-							if (x.className === "topnav") {
-								x.className += " responsive";
-							} else {
-								x.className = "topnav";
-							}
-						}
-					</script>
+								<div class="mySlides fade">
+									<div class="numbertext">2 / 3</div>
+									<img src="img/3.jpg" style="width:100%; height: 400px;">
+									<div class="text">Caption Two</div>
+								</div>
 
+								<div class="mySlides fade">
+									<div class="numbertext">3 / 3</div>
+									<img src="img/4.jpg" style="width:100%; height: 400px;">
+									<div class="text">Caption Three</div>
+								</div>
 
-				</div>	
-				<div style="margin-top: 100px; margin-bottom: 10px;">
-					<div class="slideshow-container">
+							</div>
+							<br>
 
-						<div class="mySlides fade">
-							<div class="numbertext">1 / 3</div>
-							<img src="img/2.jpg" style="width:100%; height: 400px;">
-							<div class="text">Caption Text</div>
-						</div>
+							<div style="text-align:center">
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+							</div>
 
-						<div class="mySlides fade">
-							<div class="numbertext">2 / 3</div>
-							<img src="img/3.jpg" style="width:100%; height: 400px;">
-							<div class="text">Caption Two</div>
-						</div>
+							<script>
+								var slideIndex = 0;
+								showSlides();
 
-						<div class="mySlides fade">
-							<div class="numbertext">3 / 3</div>
-							<img src="img/4.jpg" style="width:100%; height: 400px;">
-							<div class="text">Caption Three</div>
-						</div>
-
-					</div>
-					<br>
-
-					<div style="text-align:center">
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-						<span class="dot"></span> 
-					</div>
-
-					<script>
-						var slideIndex = 0;
-						showSlides();
-
-						function showSlides() {
-							var i;
-							var slides = document.getElementsByClassName("mySlides");
-							var dots = document.getElementsByClassName("dot");
-							for (i = 0; i < slides.length; i++) {
-								slides[i].style.display = "none";  
-							}
-							slideIndex++;
-							if (slideIndex > slides.length) {slideIndex = 1}    
-								for (i = 0; i < dots.length; i++) {
-									dots[i].className = dots[i].className.replace(" active", "");
-								}
-								slides[slideIndex-1].style.display = "block";  
-								dots[slideIndex-1].className += " active";
+								function showSlides() {
+									var i;
+									var slides = document.getElementsByClassName("mySlides");
+									var dots = document.getElementsByClassName("dot");
+									for (i = 0; i < slides.length; i++) {
+										slides[i].style.display = "none";  
+									}
+									slideIndex++;
+									if (slideIndex > slides.length) {slideIndex = 1}    
+										for (i = 0; i < dots.length; i++) {
+											dots[i].className = dots[i].className.replace(" active", "");
+										}
+										slides[slideIndex-1].style.display = "block";  
+										dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
+</div>
+</div>
 </div>
 
 </div>
