@@ -72,9 +72,7 @@
 			</div>	
 
 		</div>
-	</div>
 	<!-- phan lien he  -->
-	<div class="row">
 		<?php 
 		include 'enpage.php';
 		?>
