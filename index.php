@@ -177,25 +177,9 @@
 
 </div>
 <!-- phan lien he  -->
-<div id="footer" style="margin-top: 10%">
-	<div class="endpage">
-		<table border="0" width="100%" cellspacing="0" cellpadding="0">
-			<tbody>
-				<tr>
-					<td align="left" valign="top">
-						<p style="font-size:12px">
-							<strong>Copyright © 2011: </strong><strong>Công Ty TNHH Phát Triển Dự Án Song Nam </strong>- Hotline : <strong>0769 861 168</strong><br>
-							<strong>Trụ sở chính: </strong>98 Trần Quang Khải, P. Tân Định, Quận 1, TP HCM - Tel: + (84.28) 3848 4995 - Fax: + (84.28) 35 265 269<br>
-							<strong>Bình Dương: </strong>401/36 Lê Hồng Phong, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương - Tel / Fax: + (84 650) 385 6689<br>
-							<strong>Song Nam USA Corporation:</strong> 26521 Lilac Hill Dr, Escondido, CA 92026, United States<br>
-						</p>
-					</td>
-				</tr>
-			</tbody></table>
-
-		</div>
-
-	</div>
+	<?php 
+	include 'enpage.php';
+	?>
 
 </body>
 </html>
