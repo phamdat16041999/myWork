@@ -141,7 +141,7 @@
 						</script>
 					</div>
 					<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; ">
-						<img src="sodotochuccongty.png" alt="" style="max-width: 100%; height: auto;">
+						<img src="sodotochuccongty.PNG" alt="" style="max-width: 100%; height: auto;">
 					</div>
 				</div>	
 
