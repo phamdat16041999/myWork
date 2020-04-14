@@ -75,10 +75,13 @@
 
 
 		</div>
+		</div>
 		<!-- phan lien he  -->
 	<?php 
 	include 'enpage.php';
 	?>
+
+
 
 		</body>
 		</html>
