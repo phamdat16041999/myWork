@@ -41,9 +41,9 @@
 			<div class="col-lg-8 col-md-12" id="boderright">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">						
-					<?php 
-					include 'menuTop.php';
-					?>
+						<?php 
+						include 'menuTop.php';
+						?>
 					</div>
 					
 					<?php 
@@ -67,18 +67,20 @@
 					}
 					?>
 
-						
-					</div>
-				</div>	
 
-			</div>
+				</div>
+			</div>	
+
 		</div>
-		<!-- phan lien he  -->
-	<?php 
-	include 'enpage.php';
-	?>
+	</div>
+	<!-- phan lien he  -->
+	<div class="row">
+		<?php 
+		include 'enpage.php';
+		?>
+	</div>
 
 
 
-		</body>
-		</html>
+</body>
+</html>
