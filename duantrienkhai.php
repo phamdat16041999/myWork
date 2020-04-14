@@ -71,10 +71,6 @@
 				</div>	
 
 			</div>
-
-
-
-		</div>
 		</div>
 		<!-- phan lien he  -->
 	<?php 
