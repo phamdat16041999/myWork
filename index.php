@@ -36,12 +36,12 @@
 			?>
 
 			<div class="col-lg-8 col-md-12" id="boderright">
-				<div class="row">
-					<?php 
-					include 'menuTop.php';
-					?>
-					<div style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
-										<div style="margin-top: 100px; margin-bottom: 10px;">
+				<?php 
+				include 'menuTop.php';
+				?>
+
+
+				<div style="margin-top: 100px; margin-bottom: 10px;">
 					<div class="slideshow-container">
 
 						<div class="mySlides fade">
@@ -95,9 +95,7 @@
 </div>
 
 </div>
-						
-					</div>
-				</div>
+
 
 
 </div>
