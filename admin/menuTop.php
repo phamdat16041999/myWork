@@ -7,7 +7,7 @@
 <body>
 		<div class="topnav" id="myTopnav">
 			<a href="admin/admin.php" class="active">Trang chủ</a>
-			<a href="/myWork/index.php">Đăng xuất</a>
+			<a href="/index.php">Đăng xuất</a>
 		</div>
 
 
