@@ -87,7 +87,7 @@
 						$stmt = $pdo->prepare($query);	
 						$stmt->execute();
 						if($stmt!= null){
-							header("Location: ./index.php");
+							header("Location: ./admin.php.php");
 							echo "Product has add successfully!";
 						}
 						else
