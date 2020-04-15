@@ -98,6 +98,6 @@
 		<?php 
 		include 'enpage.php';
 		?>
-
+	</div>
 	</body>
 	</html>
