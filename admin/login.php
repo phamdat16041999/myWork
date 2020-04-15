@@ -64,42 +64,38 @@
 
 							</th>
 						</tr>
-						<form action="" method="POST" accept-charset="utf-8">
-							<tr>
-								<td><div class="textlienhe">Tên đăng nhập:</div></td>
-								<td><input type="text" name="username" style="width: 80%"></td>
-							</tr>
-							<tr>
-								<td><div class="textlienhe">Mật khẩu:</div></td>
-								<td><input type="text" name="password" style="width: 80%"></td>
-							</tr>
-							<tr>
-								<td colspan="2" style="text-align: center;"><input type="submit" name="" value="Đồng ý gửi"></td>
-							</tr>
-												<?php 
-					if(isset($_POST['username'])&&isset($_POST['password']))
-					{
-						$username=$_POST['username'];
-						$password=$_POST['password'];
-						$query = "SELECT username, password FROM account WHERE username = '" . $username . "' and password = '". $password ."'" ;
-						$stmt = $pdo->prepare($query);
-						$stmt->setFetchMode(PDO::FETCH_ASSOC);
-						$stmt->execute();
-						$resultSet = $stmt->fetchAll();
-						if ((count($resultSet)>0))
-						{
-							header("Location: ./admin/admin.php");
-							echo "Bạn đã đăng nhập thành công";
-						}
-						else
-						{
-							echo "Tài khoản hoặc mật khẩu của bạn không đúng";
-						}
-					}
-					?>
-						</form>
-					</table>
+		<form action="" method="GET">
+			<input type="text" name="UserName" value="User name">
+			<input type="text" name="PassWord" value="Password">
+			<div><input type="submit" value="Login" name="Login"></div>
+			<?php 
+			if(isset($_GET['UserName'])&&isset($_GET['PassWord']))
+			{
+				$a=$_GET['UserName'];
+				$b=$_GET['PassWord'];
+				$query = "SELECT username, password FROM account WHERE username = '" . $a . "' and password = '". $b ."'" ;
+				$stmt = $pdo->prepare($query);
+				$stmt->setFetchMode(PDO::FETCH_ASSOC);
+				$stmt->execute();
+				$resultSet = $stmt->fetchAll();
 
+				$c = $resultSet[0]["customerid"];
+	
+
+				if ((count($resultSet)>0))
+				{
+
+					header("Location: ./admin.php");
+					
+				}
+				else
+				{
+					echo 'aaaaaaa';
+				}
+			}
+			?>
+
+		</form>
 
 
 
