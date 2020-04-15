@@ -5,7 +5,7 @@
 
 	<style type="text/css" media="screen">
 		.parent {
-			background-image: url('images/bg-header.jpg');
+			background-image: url('img/backgroundHome.jpg');
 			background-size: cover;
 			background-position: center;
 			width: 100%;
