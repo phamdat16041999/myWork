@@ -84,9 +84,13 @@
 						$username=$_POST['username'];
 						$password=$_POST['password'];
 						$query = "select count(username) from account where username='".$username."' and password = '".$password."'";
-						$stmt = $pdo->prepare($query);	
+						$stmt = $pdo->prepare($query);
+						$stmt->setFetchMode(PDO::FETCH_ASSOC);
 						$stmt->execute();
-						if($stmt!= null){
+						$resultSet = $stmt->fetchAll();
+
+						if ((count($resultSet)>0))
+						{
 							header("Location: ./admin.php");
 							echo "Product has add successfully!";
 						}
