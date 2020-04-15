@@ -91,7 +91,7 @@
 
 						if ((count($resultSet)>0))
 						{
-							header("Location: ./admin.php");
+							header("Location: ./admin/admin.php");
 						}
 						else
 						{
