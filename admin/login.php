@@ -87,7 +87,7 @@
 						$stmt = $pdo->prepare($add);	
 						$stmt->execute();
 						if($stmt = 1){
-							header("Location: ./admin/admin.php");
+							header("Location: ./admin.php");
 						}
 						else
 						{
