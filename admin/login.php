@@ -76,8 +76,7 @@
 							<tr>
 								<td colspan="2" style="text-align: center;"><input type="submit" name="" value="Đồng ý gửi"></td>
 							</tr>
-					</table>
-					<?php 
+												<?php 
 					if(isset($_POST['username'])&&isset($_POST['password']))
 					{
 						$username=$_POST['username'];
@@ -98,8 +97,11 @@
 						}
 					}
 					?>
+						</form>
+					</table>
 
-					</form>
+
+
 
 
 
