@@ -56,28 +56,29 @@
 	<div class="parent">
 		
 
-		<form action="" method="GET">
+		<form action="" method="POST">
 			<input type="text" name="UserName" value="User name">
 			<input type="text" name="PassWord" value="Password">
 			<div><input type="submit" value="Login" name="Login"></div>
 			<?php 
-			if(isset($_GET['UserName'])&&isset($_GET['PassWord']))
+			if(isset($_POST['UserName'])&&isset($_POST['PassWord']))
 			{
-				$a=$_GET['UserName'];
-				$b=$_GET['PassWord'];
+				$a=$_POST['UserName'];
+				$b=$_POST['PassWord'];
 				$query = "SELECT username, password FROM account WHERE username = '" . $a . "' and password = '". $b ."'" ;
 				$stmt = $pdo->prepare($query);
 				$stmt->setFetchMode(PDO::FETCH_ASSOC);
 				$stmt->execute();
 				$resultSet = $stmt->fetchAll();
 
-				$c = $resultSet[0]["customerid"];
+				$username = $resultSet[0]["username"];
+				$password = $resultSet[0]["password"];
 	
 
 				if ((count($resultSet)>0))
 				{
 
-					header("Location: ./admin.php");
+					header("Location: ./admin.php?username=$username and ?password = $password");
 					
 				}
 				else
