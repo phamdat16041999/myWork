@@ -71,7 +71,7 @@
 							</tr>
 							<tr>
 								<td><div class="textlienhe">Mật khẩu:</div></td>
-								<td><input type="text" name="diachi" style="width: 80%"></td>
+								<td><input type="text" name="password" style="width: 80%"></td>
 							</tr>
 							<tr>
 								<td colspan="2" style="text-align: center;"><input type="submit" name="" value="Đồng ý gửi"></td>
@@ -83,16 +83,15 @@
 					{
 						$username=$_POST['username'];
 						$password=$_POST['password'];
-						$add= "insert into lienhe (hoten, diachi, dienthoai, email, mucdichgui, tieudegui,noidung, ngay) values('".$hoten."', '".$diachi."', '".$dienthoai."', '" .$email."', '" .$mucdichgui."', '" .$tieudegui."', '" .$noidung."','" .$date."')";
+						$add= "select count(username) from account where username='".$username."' and password = '".$password."'";
 						$stmt = $pdo->prepare($add);	
 						$stmt->execute();
-						if($stmt!= null){
-							header("Location: ./index.php");
-							echo "Product has add successfully!";
+						if($stmt = 1){
+							header("Location: ./admin/admin.php");
 						}
 						else
 						{
-							echo "Try again";
+							echo "Tài khoản hoặc mật khẩu của bạn không đúng";
 						}
 					}
 					?>
