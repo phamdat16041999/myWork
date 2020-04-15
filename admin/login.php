@@ -92,7 +92,6 @@
 						if ((count($resultSet)>0))
 						{
 							header("Location: ./admin.php");
-							echo "Product has add successfully!";
 						}
 						else
 						{
