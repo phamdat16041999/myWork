@@ -86,7 +86,8 @@
 						$add= "select count(username) from account where username='".$username."' and password = '".$password."'";
 						$stmt = $pdo->prepare($add);	
 						$stmt->execute();
-						if($stmt = 1){
+						$resultSet = $stmt->fetchAll();
+						if ((count($resultSet)>0)){
 							header("Location: ./admin.php");
 						}
 						else
