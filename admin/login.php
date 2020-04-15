@@ -88,10 +88,10 @@
 						$stmt->setFetchMode(PDO::FETCH_ASSOC);
 						$stmt->execute();
 						$resultSet = $stmt->fetchAll();
-
 						if ((count($resultSet)>0))
 						{
 							header("Location: ./admin/admin.php");
+							echo "Bạn đã đăng nhập thành công";
 						}
 						else
 						{
