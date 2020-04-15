@@ -14,10 +14,7 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body style="height: 100%;">	
-	<?php 
-	include 'connect.php';
-	?>
+<body>
 	
 	<div class="container">
 		<div class="row">
@@ -38,14 +35,13 @@
 			include 'menuLeft.php';
 			?>
 
-			<div class="col-lg-8 col-md-12" id="boderright">
+			<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
 				<div class="row">
-					<div class="col-lg-12 col-md-12">						
+					<div class="col-lg-12 col-md-12">
 						<?php 
 						include 'menuTop.php';
 						?>
 					</div>
-					
 					<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; ">
 						<div>
 							<h3 style="text-align: center; width: 100%">Thư ngỏ</h3>
@@ -91,19 +87,17 @@
 							</div>
 						</div>
 					</div>
+				</div>	
+
+			</div>
 
 
-				</div>
-			</div>	
 
 		</div>
-	<!-- phan lien he  -->
+		<!-- phan lien he  -->
 		<?php 
 		include 'enpage.php';
 		?>
 	</div>
-
-
-
-</body>
-</html>
+	</body>
+	</html>
