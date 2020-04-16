@@ -27,7 +27,7 @@
 					<div class="col-lg-12 col-md-6">
 						<div class="sidenav">
 							<button class="dropdown-btn">
-								<a href="duantrienkhai.php" title=""><h3>Dự án triển khai</h3></a>
+								<a href="duantrienkhai.php" title="" class="hovermenuleft"><h3>Dự án triển khai</h3></a>
 								<i class="fa fa-caret-down"></i>
 							</button>
 
