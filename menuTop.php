@@ -9,7 +9,7 @@
 			<a href="index.php" class="active">Trang chủ</a>
 			<a href="vechungtoi.php">Về chúng tôi</a>
 			<a href="lienhe.php">Liên hệ</a> 
-			<a href="admin/admin.php">Quản trị viên</a>
+			<a href="admin/login1.php">Quản trị viên</a>
 			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</div>
 
