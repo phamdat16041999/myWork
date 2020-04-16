@@ -75,7 +75,7 @@
 								for($i=0; $i<count($resultSet); $i++)
 								{
 									?>
-									<table>
+									<table style="width:100%">
 										<form action="" method="POST" accept-charset="utf-8">
 											<tr>
 												<td><div class="textlienhe">ID :</div></td>

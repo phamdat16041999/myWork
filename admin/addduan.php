@@ -64,7 +64,7 @@
 								<div style="text-align: center;">
 									<H5>Thêm dự án</H5>
 								</div>
-								<table>
+								<table style="width:100%">
 									<form action="" method="POST" accept-charset="utf-8">
 										<tr>
 											<td><div class="textlienhe">Địa chỉ :</div></td>

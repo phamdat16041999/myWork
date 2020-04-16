@@ -13,7 +13,7 @@
 						<i class="fa fa-caret-down"></i>
 					</button>
 					<button class="dropdown-btn">
-						<a href="duantrienkhai.php" title=""><h3>Quản lý liên hệ</h3></a>
+						<a href="lienhe.php?username=<?=$username?>&password=<?=$password?>" title=""><h3>Quản lý liên hệ</h3></a>
 						<i class="fa fa-caret-down"></i>
 					</button>
 					<button class="dropdown-btn">
