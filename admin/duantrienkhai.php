@@ -68,7 +68,7 @@
 								?>
 							</div>
 							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
-								<a href="addduan.php" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
+								<a href="addduan.php?username=<?=$username?>&password=<?=$password?>" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
 								<table>
 									<tr>
 										<td>Địa chỉ</td>
