@@ -61,7 +61,55 @@
 								?>
 							</div>
 							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
-								<img src="img/admin.png" alt="" style="max-width: 100%; height: auto;">
+								<div style="text-align: center;">
+									<H5>Thêm dự án</H5>
+								</div>
+								<table>
+									<form action="" method="POST" accept-charset="utf-8">
+										<tr>
+											<td><div class="textlienhe">Địa chỉ :</div></td>
+											<td><input type="text" name="diachi" style="width: 80%"></td>
+										</tr>
+										<tr>
+											<td><div class="textlienhe">Tên dự án :</div></td>
+											<td><input type="text" name="tenduan" style="width: 80%"></td>
+										</tr>
+										<tr>
+											<td><div class="textlienhe">Đường dẫn ảnh :</div></td>
+											<td><textarea name="duongdananh" style="width: 80%; overflow: auto;height: 200px"></textarea></td>
+										</tr>
+										<tr>
+											<td colspan="2" style="text-align: center;"><input type="submit" name="" value="thêm dự án"></td>
+										</tr>
+									</form>
+								</table>
+								<?php 
+								if(isset($_POST['diachi'])&&isset($_POST['tenduan'])&&isset($_POST['duongdananh'])&&isset($_GET['id']))
+								{
+									$diachi =$_POST['diachi'];
+									$tenduan =$_POST['tenduan'];
+									$duongdananh =$_POST['duongdananh'];
+									$id = $_GET['id'];
+									$update = "update duantrienkhai set diachi = ".$diachi."', tenduan = '".$tenduan."', duongdananh = '".$duongdananh."' where id = '".$id."'";
+									$stmt = $pdo->prepare($update);	
+									$stmt->execute();
+									if($stmt!= null){
+										header("Location: ./admin.php");
+										echo "Product has add successfully!";
+									}
+									else
+									{
+										echo "Try again";
+									}
+								}
+								?>
+
+
+
+
+
+
+
 							</div>	
 
 						</div>
@@ -70,10 +118,10 @@
 
 					</div>
 				</div>
-					<!-- phan lien he  -->
-					<?php 
-					include 'enpage.php';
-					?>
+				<!-- phan lien he  -->
+				<?php 
+				include 'enpage.php';
+				?>
 				
 				<?php
 			}
