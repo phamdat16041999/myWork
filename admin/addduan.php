@@ -94,7 +94,6 @@
 									$stmt->execute();
 									if($stmt!= null){
 										header("Location: ./admin.php");
-										echo "Product has add successfully!";
 									}
 									else
 									{
