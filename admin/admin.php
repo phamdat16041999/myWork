@@ -60,7 +60,7 @@
 								include 'menuTop.php';
 								?>
 							</div>
-							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; ">
+							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
 								<img src="img/admin.png" alt="" style="max-width: 100%; height: auto;">
 							</div>	
 
