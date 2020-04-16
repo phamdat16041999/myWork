@@ -375,3 +375,14 @@ img {vertical-align: middle;}
 
 	}
 }
+
+.hovermenuleft{
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+.hovermenuleft:hover {
+  background-color: #555;
+  color: white;
+}
