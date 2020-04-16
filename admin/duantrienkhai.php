@@ -68,12 +68,8 @@
 								?>
 							</div>
 							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
-							<div class="row">
-								<div class="col-lg-12 col-md-12">
-									<a href="add.php" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<table>
+								<a href="add.php" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
+								<table>
 									<tr>
 										<td>Địa chỉ</td>
 										<td>Tên dự án</td>
@@ -100,8 +96,6 @@
 									}
 									?>
 								</table>
-								</div>
-							</div>
 							</div>	
 
 						</div>
