@@ -103,23 +103,22 @@
 								?>
 
 								<?php 
-								if(isset($_POST['diachi'])&&isset($_POST['tenduan'])&&isset($_POST['duongdananh'])&&isset($_POST['id']))
+								if(isset($_POST['id'])&&isset($_POST['diachi'])&&isset($_POST['tenduan'])&&isset($_POST['duongdananh']))
 								{
-									$diachi =$_POST['diachi'];
-									$tenduan =$_POST['tenduan'];
-									$duongdananh =$_POST['duongdananh'];
-									$id = $_POST['id'];
-									$update = "Update duantrienkhai Set diachi = ".$diachi."', tenduan = '".$tenduan."', duongdananh = '".$duongdananh."' where id = '".$id."'";
+
+									$id=$_POST['id'];
+									$diachi=$_POST['diachi'];
+									$tenduan=$_POST['tenduan'];
+									$duongdananh=$_POST['duongdananh'];
+									$update = "Update duantrienkhai Set id = '" .$id."', diachi = '" .$diachi."', tenduan = '" .$tenduan."', duongdananh = '" .$duongdananh."' where id ='" . $id."'";
 									$stmt = $pdo->prepare($update);	
 									$stmt->execute();
-									if($stmt!= null){
+									if($stmt != null){
+										echo "Product has update successfully!";
 										header("Location: ./admin.php");
-										echo "Product has add successfully!";
 									}
 									else
-									{
 										echo "Try again";
-									}
 								}
 								?>
 
