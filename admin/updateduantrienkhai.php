@@ -64,32 +64,51 @@
 								<div style="text-align: center;">
 									<H5>Thêm dự án</H5>
 								</div>
-								<table>
-									<form action="" method="POST" accept-charset="utf-8">
-										<tr>
-											<td><div class="textlienhe">Địa chỉ :</div></td>
-											<td><input type="text" name="diachi" style="width: 80%"></td>
-										</tr>
-										<tr>
-											<td><div class="textlienhe">Tên dự án :</div></td>
-											<td><input type="text" name="tenduan" style="width: 80%"></td>
-										</tr>
-										<tr>
-											<td><div class="textlienhe">Đường dẫn ảnh :</div></td>
-											<td><textarea name="duongdananh" style="width: 80%; overflow: auto;height: 200px"></textarea></td>
-										</tr>
-										<tr>
-											<td colspan="2" style="text-align: center;"><input type="submit" name="" value="thêm dự án"></td>
-										</tr>
-									</form>
-								</table>
 								<?php 
-								if(isset($_POST['diachi'])&&isset($_POST['tenduan'])&&isset($_POST['duongdananh'])&&isset($_GET['id']))
+								if(isset($_GET['id']));
+								$id=$_GET['id'];
+								$query = "select * from duantrienkhai where id = '" .$id."'";
+								$stmt = $pdo->prepare($query);
+								$stmt->setFetchMode(PDO::FETCH_ASSOC);
+								$stmt->execute();
+								$resultSet = $stmt->fetchAll();
+								for($i=0; $i<count($resultSet); $i++)
+								{
+									?>
+									<table>
+										<form action="" method="POST" accept-charset="utf-8">
+											<tr>
+												<td><div class="textlienhe">ID :</div></td>
+												<td><input type="text" name="id" style="width: 80%" value="<?=$resultSet[$i]["id"]?>"></td>
+											</tr>
+											<tr>
+												<td><div class="textlienhe">Địa chỉ :</div></td>
+												<td><input type="text" name="diachi" style="width: 80%" value="<?=$resultSet[$i]["diachi"]?>"></td>
+											</tr>
+											<tr>
+												<td><div class="textlienhe">Tên dự án :</div></td>
+												<td><input type="text" name="tenduan" style="width: 80%" value="<?=$resultSet[$i]["tenduan"]?>"></td>
+											</tr>
+											<tr>
+												<td><div class="textlienhe">Đường dẫn ảnh :</div></td>
+												<td><textarea name="duongdananh" style="width: 80%; overflow: auto;height: 200px"><?=$resultSet[$i]["duongdananh"]?></textarea></td>
+											</tr>
+											<tr>
+												<td colspan="2" style="text-align: center;"><input type="submit" name="" value="sửa dự án"></td>
+											</tr>
+										</form>
+									</table>
+									<?php 
+								}
+								?>
+
+								<?php 
+								if(isset($_POST['diachi'])&&isset($_POST['tenduan'])&&isset($_POST['duongdananh'])&&isset($_POST['id']))
 								{
 									$diachi =$_POST['diachi'];
 									$tenduan =$_POST['tenduan'];
 									$duongdananh =$_POST['duongdananh'];
-									$id = $_GET['id'];
+									$id = $_POST['id'];
 									$update = "update duantrienkhai set diachi = ".$diachi."', tenduan = '".$tenduan."', duongdananh = '".$duongdananh."' where id = '".$id."'";
 									$stmt = $pdo->prepare($update);	
 									$stmt->execute();
@@ -122,7 +141,7 @@
 				<?php 
 				include 'enpage.php';
 				?>
-				
+
 				<?php
 			}
 			else
