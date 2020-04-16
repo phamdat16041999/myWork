@@ -60,8 +60,8 @@
 								include 'menuTop.php';
 								?>
 							</div>
-							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; ">
-								<img src="img/admin.png" alt="" style="width: 100%; height: auto;">
+							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; ">
+								<img src="img/admin.png" alt="" style="max-width: 100%; height: auto;">
 							</div>	
 
 						</div>
@@ -69,11 +69,12 @@
 
 
 					</div>
+				</div>
 					<!-- phan lien he  -->
 					<?php 
 					include 'enpage.php';
 					?>
-				</div>
+				
 				<?php
 			}
 			else
