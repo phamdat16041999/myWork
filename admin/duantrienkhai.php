@@ -61,7 +61,33 @@
 								?>
 							</div>
 							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
-								<img src="img/admin.png" alt="" style="max-width: 100%; height: auto;">
+								<table>
+									<tr>
+										<td>Địa chỉ</td>
+										<td>Tên dự án</td>
+										<td>Đường dẫn ảnh</td>
+										<td colspan="2">Action</td>
+									</tr>
+									<?php 
+									$sql = "select * from duantrienkhai";
+									$stmt = $pdo->prepare($sql);
+									$stmt->setFetchMode(PDO::FETCH_ASSOC);
+									$stmt->execute();
+									$resultSet = $stmt->fetchAll();
+									for($i=0; $i<count($resultSet); $i++)
+									{
+										?>
+										<tr>
+											<td><input type="text" name="diachi" style="width: 80%"><?=$resultSet[$i]["diachi"]?></td>
+											<td><input type="text" name="tenduan" style="width: 80%"><?=$resultSet[$i]["tenduan"]?></td>
+											<td><input type="text" name="duongdananh" style="width: 80%"><?=$resultSet[$i]["duongdananh"]?></td>
+											<td><<a href="" title="">delete</a></td>
+											<td><<a href="" title="">update</a></td>
+										</tr>
+									<?php  ?>
+									}
+									?>
+								</table>
 							</div>	
 
 						</div>
@@ -70,11 +96,11 @@
 
 					</div>
 				</div>
-					<!-- phan lien he  -->
-					<?php 
-					include 'enpage.php';
-					?>
-				
+				<!-- phan lien he  -->
+				<?php 
+				include 'enpage.php';
+				?>
+
 				<?php
 			}
 			else
