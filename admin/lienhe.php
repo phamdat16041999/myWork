@@ -62,7 +62,7 @@
 							?>
 						</div>
 					</div>
-					<div style="background-color: #CC681D; width: 100%; height: auto;">
+					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<table>
 							<tr>
 								<td>Họ và tên</td>

@@ -94,6 +94,7 @@
 									$stmt->execute();
 									if($stmt!= null){
 										header("Location: ./admin.php");
+										echo "Thêm dự án thành công";
 									}
 									else
 									{
