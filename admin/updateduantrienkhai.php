@@ -109,7 +109,7 @@
 									$tenduan =$_POST['tenduan'];
 									$duongdananh =$_POST['duongdananh'];
 									$id = $_POST['id'];
-									$update = "update duantrienkhai set diachi = ".$diachi."', tenduan = '".$tenduan."', duongdananh = '".$duongdananh."' where id = '".$id."'";
+									$update = "update duantrienkhai set diachi = ".$diachi."', tenduan = '".$tenduan."', duongdananh = '".$duongdananh."' where id = ".$id."";
 									$stmt = $pdo->prepare($update);	
 									$stmt->execute();
 									if($stmt!= null){
