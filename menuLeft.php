@@ -8,7 +8,7 @@
 				<div class="row" style="margin-top: 40px">
 					<div class="col-lg-12 col-md-6">
 						<div class="sidenav" style="line-height: 1.15;">
-							<button class="dropdown-btn" id="hovermenuleft"><h3>Dịch vụ</h3>
+							<button class="dropdown-btn"><h3>Dịch vụ</h3>
 								<i class="fa fa-caret-down"></i>
 							</button>
 							<div class="dropdown-container">
@@ -27,7 +27,7 @@
 					<div class="col-lg-12 col-md-6">
 						<div class="sidenav">
 							<button class="dropdown-btn">
-								<a href="duantrienkhai.php" title="" id="hovermenuleft"><h3>Dự án triển khai</h3></a>
+								<a href="duantrienkhai.php" title=""><h3>Dự án triển khai</h3></a>
 								<i class="fa fa-caret-down"></i>
 							</button>
 
