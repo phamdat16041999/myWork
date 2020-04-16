@@ -73,7 +73,6 @@
 										<td>Đường dẫn ảnh</td>
 										<td colspan="2">Action</td>
 									</tr>
-									<tr>
 									<?php 
 									$sql = "select * from duantrienkhai";
 									$stmt = $pdo->prepare($sql);
@@ -83,15 +82,16 @@
 									for($i=0; $i<count($resultSet); $i++)
 									{
 										?>
+										<tr>
 											<td><input type="text" name="diachi" style="width: 20%" value="<?=$resultSet[$i]["diachi"]?>"></td>
 											<td><input type="text" name="tenduan" style="width: 20%" value="<?=$resultSet[$i]["tenduan"]?>"></td>
 											<td><input type="text" name="duongdananh" style="width: 20%" value="<?=$resultSet[$i]["duongdananh"]?>"></td>
 											<td><<a href="" title="">delete</a></td>
 											<td><<a href="" title="">update</a></td>
+										</tr>
 										<?php 
 									}
 									?>
-									</tr>
 								</table>
 							</div>	
 
