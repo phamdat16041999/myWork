@@ -13,13 +13,6 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<style>
-		.td{
-			width: 20%;
-		}
-	</style>
 </head>
 <body>
 	<?php include 'connect.php' ?>
@@ -68,34 +61,54 @@
 								?>
 							</div>
 							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
-								<a href="addduan.php" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
+								<div style="text-align: center;">
+									<H5>Thêm dự án</H5>
+								</div>
 								<table>
-									<tr>
-										<td>Địa chỉ</td>
-										<td>Tên dự án</td>
-										<td>Đường dẫn ảnh</td>
-										<td colspan="2">Action</td>
-									</tr>
-									<?php 
-									$sql = "select * from duantrienkhai";
-									$stmt = $pdo->prepare($sql);
-									$stmt->setFetchMode(PDO::FETCH_ASSOC);
-									$stmt->execute();
-									$resultSet = $stmt->fetchAll();
-									for($i=0; $i<count($resultSet); $i++)
-									{
-										?>
+									<form action="" method="POST" accept-charset="utf-8">
 										<tr>
-											<td><input type="text" name="diachi" style="width: 100%" value="<?=$resultSet[$i]["diachi"]?>"></td>
-											<td><input type="text" name="tenduan" style="width: 100%" value="<?=$resultSet[$i]["tenduan"]?>"></td>
-											<td><input type="text" name="duongdananh" style="width: 100%" value="<?=$resultSet[$i]["duongdananh"]?>"></td>
-											<td><a href="" title="">delete</a></td>
-											<td><a href="" title="">update</a></td>
+											<td><div class="textlienhe">Địa chỉ :</div></td>
+											<td><input type="text" name="diachi" style="width: 80%"></td>
 										</tr>
-										<?php 
-									}
-									?>
+										<tr>
+											<td><div class="textlienhe">Tên dự án :</div></td>
+											<td><input type="text" name="tenduan" style="width: 80%"></td>
+										</tr>
+										<tr>
+											<td><div class="textlienhe">Đường dẫn ảnh :</div></td>
+											<td><textarea name="duongdananh" style="width: 80%; overflow: auto;height: 200px"></textarea></td>
+										</tr>
+										<tr>
+											<td colspan="2" style="text-align: center;"><input type="submit" name="" value="thêm dự án"></td>
+										</tr>
+									</form>
 								</table>
+								<?php 
+								if(isset($_POST['diachi'])&&isset($_POST['tenduan'])&&isset($_POST['duongdananh']))
+								{
+									$diachi =$_POST['diachi'];
+									$tenduan =$_POST['tenduan'];
+									$duongdananh =$_POST['duongdananh'];
+									$add= "insert into duantrienkhai (diachi, tenduan, duongdananh) values('".$diachi."', '".$tenduan."', '".$duongdananh."')";
+									$stmt = $pdo->prepare($add);	
+									$stmt->execute();
+									if($stmt!= null){
+										header("Location: ./admin.php");
+										echo "Product has add successfully!";
+									}
+									else
+									{
+										echo "Try again";
+									}
+								}
+								?>
+
+
+
+
+
+
+
 							</div>	
 
 						</div>
@@ -108,7 +121,7 @@
 				<?php 
 				include 'enpage.php';
 				?>
-
+				
 				<?php
 			}
 			else
