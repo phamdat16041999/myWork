@@ -49,9 +49,13 @@
 
 			<div class="container">
 				<div class="row">
-					<?php 
-					include 'menuTop.php';
-					?>
+					<div class="col-lg-12 col-md-12" style="background-color: #CC681D; width: 100%; height: auto;">
+						<div style="width: 100%">
+							<?php 
+							include 'menuTop.php';
+							?>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- phan lien he  -->
