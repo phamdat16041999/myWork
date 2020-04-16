@@ -164,14 +164,14 @@ li a:hover {
 
 
 
-.sidenav {
+/*.sidenav {
 	/* height: 100%; */
 	/* width: 200px; */
 	/* position: fixed; */
-	z-index: 1;
+/*	z-index: 1;
 	/* top: 0; */
 	/* left: 0; */
-	background-color: #CC681D;
+/*	background-color: #CC681D;
 	overflow-x: hidden;
 	/* padding-top: 20px; */
 }
@@ -376,13 +376,13 @@ img {vertical-align: middle;}
 	}
 }
 
-.hovermenuleft{
+#hovermenuleft{
 	display: block;
 	color: #000;
 	padding: 8px 16px;
 	text-decoration: none;
 }
-.hovermenuleft:hover {
+#hovermenuleft:hover {
   background-color: #555;
   color: white;
 }
