@@ -9,7 +9,7 @@
 					<div class="col-lg-12 col-md-6">
 						<div class="sidenav">
 							<button class="dropdown-btn">
-								<a href="duantrienkhai.php" title=""><h3>Quản lý dự án triển khai</h3></a>
+								<a href="duantrienkhai.php?username=<?=$username?>&password=<?=$password?>" title=""><h3>Quản lý dự án triển khai</h3></a>
 								<a href="duantrienkhai.php" title=""><h3>Quản lý liên hệ</h3></a>
 								<a href="duantrienkhai.php" title=""><h3>Quản lý tài khoản</h3></a>
 								<i class="fa fa-caret-down"></i>
