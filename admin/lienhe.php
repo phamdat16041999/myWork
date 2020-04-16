@@ -71,13 +71,6 @@
 							Nhập ngày cần tìm: <input type="text" name="searchlienhe" placeholder="yyyy/mm/dd">
 							<input type="submit" name="" value="Tìm kiếm">
 						</form>
-						<?php 
-						if(isset($_POST['searchlienhe']))
-							$searchlienhe=$_POST['searchlienhe'];
-						{
-							header("Location: ./searchlienhe.php?lienhe=$searchlienhe");
-						}
-						?>
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<table>
