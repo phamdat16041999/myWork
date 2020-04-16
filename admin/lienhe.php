@@ -68,49 +68,8 @@
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<form action="" method="POST" accept-charset="utf-8">
-							Năm: <select size="1" style="font-size:14pt" name="nam" id="cbopurpose">
-								<?php 
-								for ($i=2020; $i<2050 ; $i++) { 
-									?>
-									<option value="<?=$i ?>"><?=$i ?></option>
-									<?php 
-								}
-								?>
-
-
-							</select>
-							Tháng: <select size="1" style="font-size:14pt" name="thang" id="cbopurpose">
-								<?php 
-								for ($i=1; $i<12 ; $i++) { 
-									?>
-									<option value="<?=$i ?>"><?=$i ?></option>
-									<?php 
-								}
-								?>
-
-
-							</select>
-							Ngày: <select size="1" style="font-size:14pt" name="ngay" id="cbopurpose">
-								<?php 
-								for ($i=1; $i<31 ; $i++) { 
-									?>
-									<option value="<?=$i ?>"><?=$i ?></option>
-									<?php 
-								}
-								?>
-
-							</select>
-							<?php 
-							if(isset($_POST['nam'])&&isset($_POST['thang'])&&isset($_POST['ngay']))
-							{
-								$nam=$_POST['nam'];
-								$thang=$_POST['thang'];
-								$ngay=$_POST['ngay'];
-								?>
-								<a href="searchlienhe.php?ngay=<?=$ngay?>&thang=<?=$thang?>&nam=<?=$nam?>" title=""><input type="submit" name="" value="Tìm kiếm"></a>
-								<?php
-							}
-							?>
+							Nhập ngày cần tìm:<input type="text" name="searchlienhe" value="YYYY/MM/DD">
+							<input type="submit" name="" value="Tìm kiếm">
 						</form>
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
