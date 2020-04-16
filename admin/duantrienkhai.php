@@ -89,8 +89,8 @@
 											<td><input type="text" name="diachi" style="width: 100%" value="<?=$resultSet[$i]["diachi"]?>"></td>
 											<td><input type="text" name="tenduan" style="width: 100%" value="<?=$resultSet[$i]["tenduan"]?>"></td>
 											<td><input type="text" name="duongdananh" style="width: 100%" value="<?=$resultSet[$i]["duongdananh"]?>"></td>
-											<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&id=<?=$resultSet[$i]["diachi"]?>" title="">delete</a></td>
-											<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&id=<?=$resultSet[$i]["diachi"]?>" title="">update</a></td>
+											<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&id=<?=$resultSet[$i]["id"]?>" title="">delete</a></td>
+											<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&id=<?=$resultSet[$i]["id"]?>" title="">update</a></td>
 										</tr>
 										<?php 
 									}
