@@ -15,7 +15,39 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<?php include 'connect.php' ?>
+				<?php 
+			if(isset($_POST['UserName'])&&isset($_POST['PassWord']))
+			{
+				$a=$_POST['UserName'];
+				$b=$_POST['PassWord'];
+				$query = "SELECT username, password FROM account WHERE username = '" . $a . "' and password = '". $b ."'" ;
+				$stmt = $pdo->prepare($query);
+				$stmt->setFetchMode(PDO::FETCH_ASSOC);
+				$stmt->execute();
+				$resultSet = $stmt->fetchAll();
+
+				$username = $resultSet[0]["username"];
+				$password = $resultSet[0]["password"];
 	
+
+				if ((count($resultSet)>0))
+				{
+
+					echo 'Thành công';
+					
+				}
+				else
+				{
+					echo 'aaaaaaa';
+				}
+			}
+			?>
+
+
+
+
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
