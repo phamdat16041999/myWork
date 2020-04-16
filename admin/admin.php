@@ -17,10 +17,10 @@
 <body>
 	<?php include 'connect.php' ?>
 	<?php 
-	if(isset($_GET['UserName'])&&isset($_GET['PassWord']))
+	if(isset($_GET['username'])&&isset($_GET['password']))
 	{
-		$a=$_GET['UserName'];
-		$b=$_GET['PassWord'];
+		$a=$_GET['username'];
+		$b=$_GET['password'];
 		$query = "SELECT username, password FROM account WHERE username = '" . $a . "' and password = '". $b ."'" ;
 		$stmt = $pdo->prepare($query);
 		$stmt->setFetchMode(PDO::FETCH_ASSOC);
