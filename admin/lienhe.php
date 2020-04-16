@@ -13,6 +13,12 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+		td{
+			width: 71%;
+			height: auto;
+		}
+	</style>
 </head>
 <body>
 	<?php include 'connect.php' ?>
@@ -56,8 +62,47 @@
 							?>
 						</div>
 					</div>
-					<div style="background-color: red;">
-						aaaaaa
+					<div style="background-color: #CC681D; width: 100%; height: auto;">
+						<table>
+							<tr>
+								<td>Họ và tên</td>
+								<td>Địa chỉ</td>
+								<td>Điện thoại</td>
+								<td>Gmail</td>
+								<td>Mục đích gửi</td>
+								<td>Tiêu đề</td>
+								<td>Nội dung</td>
+								<td>Ngày liên hệ</td>
+							</tr>
+							<?php 
+							$sql = "select * from lienhe";
+							$stmt = $pdo->prepare($sql);
+							$stmt->setFetchMode(PDO::FETCH_ASSOC);
+							$stmt->execute();
+							$resultSet = $stmt->fetchAll();
+							for($i=0; $i<count($resultSet); $i++)
+							{
+								?>
+								<tr>
+									<td><?=$resultSet[$i]["hoten"]?></td>
+									<td><?=$resultSet[$i]["diachi"]?></td>
+									<td><?=$resultSet[$i]["dienthoai"]?></td>
+									<td><?=$resultSet[$i]["email"]?></td>
+									<td><?=$resultSet[$i]["mucdichgui"]?></td>
+									<td><?=$resultSet[$i]["tieudegui"]?></td>
+									<td><?=$resultSet[$i]["noidung"]?></td>
+									<td><?=$resultSet[$i]["ngay"]?></td>
+								</tr>
+								<?php 
+							}
+							?>
+
+
+
+							<tr>
+								
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
