@@ -68,33 +68,33 @@
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<form action="" method="get" accept-charset="utf-8">
-							<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
+							Năm: <select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
 								<?php 
 								for ($i=2020; $i<2050 ; $i++) { 
 									?>
-									Năm: <option ><?=$i ?></option>
+									<option ><?=$i ?></option>
 									<?php 
 								}
 								?>
 
 
 							</select>
-							<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
+							Tháng: <select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
 								<?php 
 								for ($i=1; $i<12 ; $i++) { 
 									?>
-									Tháng: <option ><?=$i ?></option>
+									<option ><?=$i ?></option>
 									<?php 
 								}
 								?>
 
 
 							</select>
-							<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
+							Ngày: <select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
 								<?php 
 								for ($i=1; $i<31 ; $i++) { 
 									?>
-									Ngày: <option ><?=$i ?></option>
+									<option ><?=$i ?></option>
 									<?php 
 								}
 								?>
