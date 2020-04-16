@@ -18,6 +18,10 @@
 			width: 7%;
 			height: auto;
 		}
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
 	</style>
 </head>
 <body>
@@ -62,6 +66,21 @@
 							?>
 						</div>
 					</div>
+					<div>
+						<form action="" method="get" accept-charset="utf-8">
+							<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
+								<?php 
+								for ($i=2020; $i<2050 ; $i+1) { 
+								?>
+								<option ><?=$i ?></option>
+								<?php 
+								}
+								 ?>
+
+
+							</select>
+						</form>
+					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<table>
 							<tr>
@@ -100,7 +119,7 @@
 
 
 							<tr>
-								
+
 							</tr>
 						</table>
 					</div>
