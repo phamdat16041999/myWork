@@ -100,18 +100,18 @@
 								?>
 
 							</select>
+							<?php 
+							if(isset($_POST['nam'])&&isset($_POST['thang'])&&isset($_POST['ngay']))
+							{
+								$nam=$_POST['nam'];
+								$thang=$_POST['thang'];
+								$ngay=$_POST['ngay'];
+								?>
+								<a href="searchlienhe.php?ngay=<?=$ngay?>&thang=<?=$thang?>&nam=<?=$nam?>" title=""><input type="submit" name="" value="Tìm kiếm"></a>
+								<?php
+							}
+							?>
 						</form>
-						<?php 
-						if(isset($_POST['nam'])&&isset($_POST['thang'])&&isset($_POST['ngay']))
-						{
-							$nam=$_POST['nam'];
-							$thang=$_POST['thang'];
-							$ngay=$_POST['ngay'];
-						?>
-						<a href="searchlienhe.php?ngay=<?=$ngay?>&thang=<?=$thang?>&nam=<?=$nam?>" title=""><input type="submit" name="" value="Tìm kiếm"></a>
-							<?php
-						}
-						?>
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<table>
