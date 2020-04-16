@@ -13,6 +13,11 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+		.td{
+			width: 20%;
+		}
+	</style>
 </head>
 <body>
 	<?php include 'connect.php' ?>
@@ -78,9 +83,9 @@
 									for($i=0; $i<count($resultSet); $i++)
 									{
 										?>
-											<td><input type="text" name="diachi" style="width: 80%"><?=$resultSet[$i]["diachi"]?></td>
-											<td><input type="text" name="tenduan" style="width: 80%"><?=$resultSet[$i]["tenduan"]?></td>
-											<td><input type="text" name="duongdananh" style="width: 80%"><?=$resultSet[$i]["duongdananh"]?></td>
+											<td><input type="text" name="diachi" style="width: 20%"><?=$resultSet[$i]["diachi"]?></td>
+											<td><input type="text" name="tenduan" style="width: 20%"><?=$resultSet[$i]["tenduan"]?></td>
+											<td><input type="text" name="duongdananh" style="width: 20%"><?=$resultSet[$i]["duongdananh"]?></td>
 											<td><<a href="" title="">delete</a></td>
 											<td><<a href="" title="">update</a></td>
 										<?php 
