@@ -83,7 +83,7 @@
 				}
 				else
 				{
-					echo 'aaaaaaa';
+					echo 'Vui lòng kiểm tra lại mật khẩu';
 				}
 			}
 			?>
