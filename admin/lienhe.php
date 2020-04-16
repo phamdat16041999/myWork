@@ -70,7 +70,7 @@
 						<form action="" method="get" accept-charset="utf-8">
 							<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
 								<?php 
-								for ($i=2020; $i<2050 ; $i+1) { 
+								for ($i=2020; $i<2050 ; $i++) { 
 								?>
 								<option ><?=$i ?></option>
 								<?php 
