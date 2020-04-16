@@ -76,6 +76,10 @@
 									<?php 
 								}
 								?>
+
+
+							</select>
+							<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
 								<?php 
 								for ($i=1; $i<12 ; $i++) { 
 									?>
@@ -83,10 +87,14 @@
 									<?php 
 								}
 								?>
+
+
+							</select>
+							<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
 								<?php 
 								for ($i=1; $i<31 ; $i++) { 
 									?>
-									Ngày <option ><?=$i ?></option>
+									Ngày: <option ><?=$i ?></option>
 									<?php 
 								}
 								?>
