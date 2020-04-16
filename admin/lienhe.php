@@ -18,7 +18,7 @@
 			width: 7%;
 			height: auto;
 		}
-		table, th, td {
+		table{
 			border: 1px solid black;
 			border-collapse: collapse;
 		}
@@ -66,13 +66,15 @@
 							?>
 						</div>
 					</div>
-					<div>
+					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<form action="" method="get" accept-charset="utf-8">
 							<select size="1" style="font-size:14pt" name="mucdichgui" id="cbopurpose">
 								<?php 
 								for ($i=2020; $i<2050 ; $i++) { 
 								?>
-								<option ><?=$i ?></option>
+								Năm: <option ><?=$i ?></option>
+								Tháng: <option ><?=$i ?></option>
+								Ngày: <option ><?=$i ?></option>
 								<?php 
 								}
 								 ?>
