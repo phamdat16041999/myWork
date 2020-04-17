@@ -42,15 +42,15 @@
 				header("Location: ./duantrienkhai.php?username=<?=$username?>&password=<?=$password?>");
 			}
 			else{
-				echo "Try again";}
+				echo "Try again";
 			}
 		}
-		else
-		{
-			echo 'Not found 404';
-		}
 	}
-	?>
+	else
+	{
+		echo 'Not found 404';
+	}
+?>
 
 </body>
 </html>
