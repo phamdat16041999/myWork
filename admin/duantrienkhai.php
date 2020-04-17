@@ -68,34 +68,41 @@
 								?>
 							</div>
 							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
-								<a href="addduan.php?username=<?=$username?>&password=<?=$password?>" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
-								<table>
-									<tr>
-										<td>Địa chỉ</td>
-										<td>Tên dự án</td>
-										<td>Đường dẫn ảnh</td>
-										<td colspan="2">Action</td>
-									</tr>
-									<?php 
-									$sql = "select * from duantrienkhai";
-									$stmt = $pdo->prepare($sql);
-									$stmt->setFetchMode(PDO::FETCH_ASSOC);
-									$stmt->execute();
-									$resultSet = $stmt->fetchAll();
-									for($i=0; $i<count($resultSet); $i++)
-									{
-										?>
-										<tr>
-											<td><input type="text" name="diachi" style="width: 100%" value="<?=$resultSet[$i]["diachi"]?>"></td>
-											<td><input type="text" name="tenduan" style="width: 100%" value="<?=$resultSet[$i]["tenduan"]?>"></td>
-											<td><input type="text" name="duongdananh" style="width: 100%" value="<?=$resultSet[$i]["duongdananh"]?>"></td>
-											<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&id=<?=$resultSet[$i]["id"]?>" title="">Update</a></td>
-											<td><a href="delete.php?username=<?=$username?>&password=<?=$password?>&idduantrienkhai=<?=$resultSet[$i]["id"]?>" title="">Delete</a></td>
-										</tr>
-										<?php 
-									}
-									?>
-								</table>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<a href="addduan.php?username=<?=$username?>&password=<?=$password?>" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
+									</div>
+									<div class="col-lg-12 col-md-12">
+										<table>
+											<tr>
+												<td>Địa chỉ</td>
+												<td>Tên dự án</td>
+												<td>Đường dẫn ảnh</td>
+												<td colspan="2">Action</td>
+											</tr>
+											<?php 
+											$sql = "select * from duantrienkhai";
+											$stmt = $pdo->prepare($sql);
+											$stmt->setFetchMode(PDO::FETCH_ASSOC);
+											$stmt->execute();
+											$resultSet = $stmt->fetchAll();
+											for($i=0; $i<count($resultSet); $i++)
+											{
+												?>
+												<tr>
+													<td><input type="text" name="diachi" style="width: 100%" value="<?=$resultSet[$i]["diachi"]?>"></td>
+													<td><input type="text" name="tenduan" style="width: 100%" value="<?=$resultSet[$i]["tenduan"]?>"></td>
+													<td><input type="text" name="duongdananh" style="width: 100%" value="<?=$resultSet[$i]["duongdananh"]?>"></td>
+													<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&id=<?=$resultSet[$i]["id"]?>" title="">Update</a></td>
+													<td><a href="delete.php?username=<?=$username?>&password=<?=$password?>&idduantrienkhai=<?=$resultSet[$i]["id"]?>" title="">Delete</a></td>
+												</tr>
+												<?php 
+											}
+											?>
+										</table>
+									</div>
+								</div>
+								
 							</div>	
 
 						</div>

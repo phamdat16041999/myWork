@@ -40,7 +40,7 @@
 			$stmt->execute();
 			if($stmt != null){
 				echo "Product has delete successfully!";
-				header("Location: ./duantrienkhai.php?username=$username&password==$password");
+				header("Location: ./duantrienkhai.php?username=$username&password=$password");
 			}
 			else{
 				echo "Try again";
