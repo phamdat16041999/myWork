@@ -34,7 +34,7 @@
 
 		if ((count($resultSet)>0))
 		{
-			$sql="delete from duantrienkhai where idduantrienkhai='".$idduantrienkhai."'";
+			$sql="delete from duantrienkhai where id='".$idduantrienkhai."'";
 			$stmt = $pdo->prepare($sql);	
 			$stmt->execute();
 			if($stmt != null){
