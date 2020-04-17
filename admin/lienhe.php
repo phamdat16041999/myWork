@@ -18,7 +18,15 @@
 			width: 7%;
 			height: auto;
 		}
-		table{
+		.tablelienhe{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		.trlienhe{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		.tdlienhe{
 			border: 1px solid black;
 			border-collapse: collapse;
 		}
@@ -73,16 +81,16 @@
 						</form>
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
-						<table>
-							<tr>
-								<td>Họ và tên</td>
-								<td>Địa chỉ</td>
-								<td>Điện thoại</td>
-								<td>Gmail</td>
-								<td>Mục đích gửi</td>
-								<td>Tiêu đề</td>
-								<td>Nội dung</td>
-								<td>Ngày liên hệ</td>
+						<table class="tablelienhe">
+							<tr class="trlienhe">
+								<td class="tdlienhe">Họ và tên</td>
+								<td class="tdlienhe">Địa chỉ</td>
+								<td class="tdlienhe">Điện thoại</td>
+								<td class="tdlienhe">Gmail</td>
+								<td class="tdlienhe">Mục đích gửi</td>
+								<td class="tdlienhe">Tiêu đề</td>
+								<td class="tdlienhe">Nội dung</td>
+								<td class="tdlienhe">Ngày liên hệ</td>
 							</tr>
 							<?php 
 							$sql = "select * from lienhe";
@@ -93,33 +101,28 @@
 							for($i=0; $i<count($resultSet); $i++)
 							{
 								?>
-								<tr>
-									<td><?=$resultSet[$i]["hoten"]?></td>
-									<td><?=$resultSet[$i]["diachi"]?></td>
-									<td><?=$resultSet[$i]["dienthoai"]?></td>
-									<td><?=$resultSet[$i]["email"]?></td>
-									<td><?=$resultSet[$i]["mucdichgui"]?></td>
-									<td><?=$resultSet[$i]["tieudegui"]?></td>
-									<td><?=$resultSet[$i]["noidung"]?></td>
-									<td><?=$resultSet[$i]["ngay"]?></td>
+								<tr class="trlienhe">
+									<td class="tdlienhe"><?=$resultSet[$i]["hoten"]?></td>
+									<td class="tdlienhe"><?=$resultSet[$i]["diachi"]?></td>
+									<td class="tdlienhe"><?=$resultSet[$i]["dienthoai"]?></td>
+									<td class="tdlienhe"><?=$resultSet[$i]["email"]?></td>
+									<td class="tdlienhe"><?=$resultSet[$i]["mucdichgui"]?></td>
+									<td class="tdlienhe"><?=$resultSet[$i]["tieudegui"]?></td>
+									<td class="tdlienhe"><?=$resultSet[$i]["noidung"]?></td>
+									<td class="tdlienhe"><?=$resultSet[$i]["ngay"]?></td>
 								</tr>
 								<?php 
 							}
 							?>
 
-
-
-							<tr>
-
-							</tr>
 						</table>
 					</div>
+					<?php 
+					include 'enpage.php';
+					?>
 				</div>
 			</div>
 			<!-- phan lien he  -->
-			<?php 
-			include 'enpage.php';
-			?>
 
 			<?php
 		}
