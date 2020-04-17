@@ -21,6 +21,7 @@
 	{
 		$a=$_GET['username'];
 		$b=$_GET['password'];
+		$idduantrienkhai = $_GET["idduantrienkhai"];
 		$query = "SELECT username, password FROM account WHERE username = '" . $a . "' and password = '". $b ."'" ;
 		$stmt = $pdo->prepare($query);
 		$stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -29,7 +30,7 @@
 
 		$username = $resultSet[0]["username"];
 		$password = $resultSet[0]["password"];
-		$idduantrienkhai = $resultSet[0]["idduantrienkhai"];
+
 
 
 		if ((count($resultSet)>0))
@@ -39,7 +40,7 @@
 			$stmt->execute();
 			if($stmt != null){
 				echo "Product has delete successfully!";
-				header("Location: ./duantrienkhai.php?username=<?=$username?>&password=<?=$password?>");
+				header("Location: ./duantrienkhai.php?username=$username&password==$password");
 			}
 			else{
 				echo "Try again";
