@@ -37,7 +37,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
-						<a href="admin.php" title=""><img src="img/Logo.png" alt="" style="width: 100%; height: auto;"></a>
+						<a href="admin.php?username=<?=$username?>&password=<?=$password?>" title=""><img src="img/Logo.png" alt="" style="width: 100%; height: auto;"></a>
 					</div>
 					<div class="col-sm-10" >
 						<h2 style="text-align: center; width: 80%; font-weight: 500;">CÔNG TY CỔ PHẦN HANAGO QUỐC TẾ</h2>
