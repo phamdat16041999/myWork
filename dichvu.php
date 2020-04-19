@@ -35,7 +35,7 @@
 			include 'menuLeft.php';
 			?>
 
-			<div class="col-lg-8 col-md-12" id="boderright">
+			<div class="col-lg-9 col-md-9" id="boderright">
 				<div>
 					<?php 
 					include 'menuTop.php';
