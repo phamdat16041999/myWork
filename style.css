@@ -163,14 +163,14 @@ li a:hover {
 @media screen and (max-width: 992px){
 	.textContent{
 		font-weight: 400;
-		size: 20px;
+		font-size: 20px;
 	}
 }
 
 
 @media screen and (max-width: 992px){
 	.texttitle{
-		size: 20px;
+		font-size: 20px;
 	}
 }
 
