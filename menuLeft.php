@@ -4,11 +4,11 @@
 	<title></title>
 </head>
 <body>
-			<div class="col-lg-4 col-md-12" id="boderleft">
+			<div class="col-lg-4 col-md-4" id="boderleft">
 				<div class="row" style="margin-top: 40px">
-					<div class="col-lg-12 col-md-6">
+					<div class="col-lg-12 col-md-12">
 						<div class="sidenav" style="line-height: 1.15;">
-							<button class="dropdown-btn"><h3>Dịch vụ</h3>
+							<button class="dropdown-btn"><h3 class="texttitle">Dịch vụ</h3>
 								<i class="fa fa-caret-down"></i>
 							</button>
 							<div class="dropdown-container">
@@ -24,7 +24,7 @@
 
 						</div>
 					</div>
-					<div class="col-lg-12 col-md-6">
+					<div class="col-lg-12 col-md-12">
 						<div class="sidenav">
 							<button class="dropdown-btn">
 								<a href="duantrienkhai.php" title=""><h3>Dự án triển khai</h3></a>
