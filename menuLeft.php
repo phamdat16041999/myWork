@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-			<div class="col-lg-4 col-md-4" id="boderleft">
+			<div class="col-lg-3 col-md-3" id="boderleft">
 				<div class="row" style="margin-top: 40px">
 					<div class="col-lg-12 col-md-12">
 						<div class="sidenav" style="line-height: 1.15;">
@@ -50,10 +50,10 @@
 							});
 						}
 					</script>
-					<div class="col-lg-12" style="text-align: center;">
+					<div class="col-lg-12" style="text-align: center; margin-top: 30px;">
 						<div>
 							<img src="img/hotline.jpg" alt="" style="max-width: 100%; height: 50px;">
-							<div style="margin-top: 20px;" >
+							<div style="margin-top: 5px;" >
 								<a href="https://www.facebook.com/" target="new"><img src="img/facebook.png" class="imgContact"></a>
 								<a href="https://mail.google.com/" target="new"><img src="img/mail.png" class="imgContact"></a>
 								<a href="https://www.skype.com/en/" target="new"><img src="img/skype.png" class="imgContact"></a>
