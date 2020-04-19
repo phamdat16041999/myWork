@@ -114,8 +114,17 @@
 									$stmt = $pdo->prepare($update);	
 									$stmt->execute();
 									if($stmt != null){
+										?>
+										<script>
+
+											setTimeout(function()
+											{ 
+												window.location = "duantrienkhai.php?username=<?=$username?>&password=<?=$password?>"; 
+											}, 10);
+
+										</script>
+										<?php
 										echo "Product has update successfully!";
-										header("Location: ./admin.php");
 									}
 									else
 										echo "Try again";

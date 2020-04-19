@@ -93,18 +93,8 @@
 									$stmt = $pdo->prepare($add);	
 									$stmt->execute();
 									if($stmt!= null){
-										?>
-										<script>
-
-											setTimeout(function()
-											{ 
-												window.location = "duantrienkhai.php?username=$username&password=$password"; 
-											}, 1000);
-
-										</script>
-										<?php
+										header("Location: ./admin.php");
 										echo "Thêm dự án thành công";
-										header("Location: ./duantrienkhai.php?username=$username&password=$password");
 									}
 									else
 									{
