@@ -6,7 +6,7 @@
 <body>
 	<div class="col-lg-3 col-md-3" id="boderleft">
 		<div class="row" style="margin-top: 40px">
-			<div class="col-lg-12 col-md-6">
+			<div class="col-lg-12 col-md-12">
 				<div class="sidenav">
 					<button class="dropdown-btn">
 						<a href="duantrienkhai.php?username=<?=$username?>&password=<?=$password?>" title=""><h3 class="texttitle">Quản lý dự án triển khai</h3></a>
