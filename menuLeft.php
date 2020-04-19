@@ -50,7 +50,7 @@
 							});
 						}
 					</script>
-					<div class="col-lg-12" style="text-align: center; margin-top: 30px;">
+					<div class="col-lg-12" style="text-align: center; margin-bottom: 10px;">
 						<div>
 							<img src="img/hotline.jpg" alt="" style="max-width: 100%; height: 50px;">
 							<div style="margin-top: 5px;" >
