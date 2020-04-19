@@ -27,7 +27,7 @@
 					<div class="col-lg-12 col-md-12">
 						<div class="sidenav">
 							<button class="dropdown-btn">
-								<a href="duantrienkhai.php" title=""><h3 class="texttitle">Dự án triển khai</h3></a>
+								<a href="duantrienkhai.php" title=""><h3 class="texttitle">Dự án</h3></a>
 								<i class="fa fa-caret-down"></i>
 							</button>
 
@@ -53,7 +53,7 @@
 					<div class="col-lg-12" style="text-align: center;">
 						<div>
 							<img src="img/hotline.jpg" alt="" style="max-width: 100%; height: 50px;">
-							<div style="margin-top: 5px;" >
+							<div style="margin-top: 20px;" >
 								<a href="https://www.facebook.com/" target="new"><img src="img/facebook.png" class="imgContact"></a>
 								<a href="https://mail.google.com/" target="new"><img src="img/mail.png" class="imgContact"></a>
 								<a href="https://www.skype.com/en/" target="new"><img src="img/skype.png" class="imgContact"></a>
