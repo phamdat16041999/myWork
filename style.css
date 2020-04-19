@@ -174,8 +174,14 @@ li a:hover {
 	}
 }
 
-
-
+.imghome{
+	width:100%; height: 400px;
+}
+@media screen and (max-width: 992px){
+	.imghome{
+		width:100%; height: 250px;
+	}
+}
 .sidenav {
 	/* height: 100%; */
 	/* width: 200px; */
