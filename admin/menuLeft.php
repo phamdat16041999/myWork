@@ -4,20 +4,20 @@
 	<title></title>
 </head>
 <body>
-	<div class="col-lg-4 col-md-12" id="boderleft">
+	<div class="col-lg-3 col-md-3" id="boderleft">
 		<div class="row" style="margin-top: 40px">
 			<div class="col-lg-12 col-md-6">
 				<div class="sidenav">
 					<button class="dropdown-btn">
-						<a href="duantrienkhai.php?username=<?=$username?>&password=<?=$password?>" title=""><h3>Quản lý dự án triển khai</h3></a>
+						<a href="duantrienkhai.php?username=<?=$username?>&password=<?=$password?>" title=""><h3 class="texttitle">Quản lý dự án triển khai</h3></a>
 						<i class="fa fa-caret-down"></i>
 					</button>
 					<button class="dropdown-btn">
-						<a href="lienhe.php?username=<?=$username?>&password=<?=$password?>" title=""><h3>Quản lý liên hệ</h3></a>
+						<a href="lienhe.php?username=<?=$username?>&password=<?=$password?>" title=""><h3 class="texttitle">Quản lý liên hệ</h3></a>
 						<i class="fa fa-caret-down"></i>
 					</button>
 					<button class="dropdown-btn">
-						<a href="duantrienkhai.php" title=""><h3>Quản lý tài khoản</h3></a>
+						<a href="duantrienkhai.php" title=""><h3 class="texttitle">Quản lý tài khoản</h3></a>
 						<i class="fa fa-caret-down"></i>
 					</button>
 

@@ -67,7 +67,7 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 col-md-12" style="background-color: #CC681D; width: 100%; height: auto;">
+					<div class="col-lg-9 col-md-9" style="background-color: #CC681D; width: 100%; height: auto;">
 						<div style="width: 100%">
 							<?php 
 							include 'menuTop.php';

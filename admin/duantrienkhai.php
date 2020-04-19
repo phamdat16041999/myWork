@@ -60,7 +60,7 @@
 					include 'menuLeft.php';
 					?>
 
-					<div class="col-lg-8 col-md-12" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+					<div class="col-lg-9 col-md-9" style="background-color: #CC681D; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
 						<div class="row">
 							<div class="col-lg-12 col-md-12">
 								<?php 
