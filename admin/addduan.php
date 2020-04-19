@@ -93,8 +93,8 @@
 									$stmt = $pdo->prepare($add);	
 									$stmt->execute();
 									if($stmt!= null){
-										header("Location: ./admin.php?username=$username&password=$password");
 										echo "Thêm dự án thành công";
+										header("Location: ./duantrienkhai.php?username=$username&password=$password");
 									}
 									else
 									{
