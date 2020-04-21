@@ -29,6 +29,7 @@
 		.tdlienhe{
 			border: 1px solid black;
 			border-collapse: collapse;
+			text-align: center;
 		}
 	</style>
 </head>
@@ -76,7 +77,7 @@
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<form action="" method="POST" accept-charset="utf-8">
-							Nhập ngày cần tìm: <input type="text" name="searchlienhe" placeholder="yyyy/mm/dd">
+							Nhập tài khoản cần tìm: <input type="text" name="searchlienhe" placeholder="Username">
 							<input type="submit" name="" value="Tìm kiếm">
 						</form>
 					</div>
@@ -85,7 +86,7 @@
 							<tr class="trlienhe">
 								<td class="tdlienhe">User name</td>
 								<td class="tdlienhe">Pass word</td>
-								<td class="tdlienhe" colspan="2"> Action</td>
+								<td class="tdlienhe" colspan="2" style="text-align: center;"> Action</td>
 							</tr>
 							<?php 
 							$sql = "select * from account";
@@ -99,8 +100,8 @@
 								<tr class="trlienhe">
 									<td class="tdlienhe"><?=$resultSet[$i]["username"]?></td>
 									<td class="tdlienhe"><?=$resultSet[$i]["password"]?></td>
-									<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&Username=<?=$resultSet[$i]["id"]?>" title="">Update</a></td>
-									<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&Username=<?=$resultSet[$i]["id"]?>" title="">Delete</a></td>
+									<td><a href="updateaccount.php?username=<?=$username?>&password=<?=$password?>&account=<?=$resultSet[$i]["username"]?>" title="">Update</a></td>
+									<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&account=<?=$resultSet[$i]["username"]?>" title="">Delete</a></td>
 
 								</tr>
 								<?php 
