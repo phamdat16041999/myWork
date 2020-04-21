@@ -66,7 +66,7 @@
 								</div>
 								<?php 
 								if(isset($_GET['account']));
-								$id=$_GET['account'];
+								$account=$_GET['account'];
 								$query = "select * from account where username = '" .$account."'";
 								$stmt = $pdo->prepare($query);
 								$stmt->setFetchMode(PDO::FETCH_ASSOC);
