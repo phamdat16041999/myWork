@@ -99,8 +99,8 @@
 								<tr class="trlienhe">
 									<td class="tdlienhe"><?=$resultSet[$i]["username"]?></td>
 									<td class="tdlienhe"><?=$resultSet[$i]["password"]?></td>
-									<a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&Username=<?=$resultSet[$i]["id"]?>" title="">Update</a>
-									<a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&Username=<?=$resultSet[$i]["id"]?>" title="">Delete</a>
+									<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&Username=<?=$resultSet[$i]["id"]?>" title="">Update</a></td>
+									<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&Username=<?=$resultSet[$i]["id"]?>" title="">Delete</a></td>
 
 								</tr>
 								<?php 
