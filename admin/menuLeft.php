@@ -17,7 +17,7 @@
 						<i class="fa fa-caret-down"></i>
 					</button>
 					<button class="dropdown-btn">
-						<a href="quanlytaikhoan.php?username=<?=$username?>&password=<?=$password?>" title=""><h3 class="texttitle">Quản lý tài khoản</h3></a>
+						<a href="selectaccount.php?username=<?=$username?>&password=<?=$password?>" title=""><h3 class="texttitle">Quản lý tài khoản</h3></a>
 						<i class="fa fa-caret-down"></i>
 					</button>
 

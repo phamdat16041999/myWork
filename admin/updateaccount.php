@@ -65,9 +65,9 @@
 									<H5>Cập nhật dự án</H5>
 								</div>
 								<?php 
-								if(isset($_GET['id']));
-								$id=$_GET['id'];
-								$query = "select * from duantrienkhai where id = '" .$id."'";
+								if(isset($_GET['account']));
+								$id=$_GET['account'];
+								$query = "select * from account where username = '" .$account."'";
 								$stmt = $pdo->prepare($query);
 								$stmt->setFetchMode(PDO::FETCH_ASSOC);
 								$stmt->execute();
@@ -78,23 +78,15 @@
 									<table style="width:100%">
 										<form action="" method="POST" accept-charset="utf-8">
 											<tr>
-												<td><div class="textlienhe">ID :</div></td>
-												<td><input type="text" name="id" style="width: 80%" value="<?=$resultSet[$i]["id"]?>"></td>
+												<td><div class="textlienhe">Tên đăng nhập :</div></td>
+												<td><input type="text" name="username" style="width: 80%" value="<?=$resultSet[$i]["username"]?>"></td>
 											</tr>
 											<tr>
-												<td><div class="textlienhe">Địa chỉ :</div></td>
-												<td><input type="text" name="diachi" style="width: 80%" value="<?=$resultSet[$i]["diachi"]?>"></td>
+												<td><div class="textlienhe">Mật khẩu :</div></td>
+												<td><input type="text" name="password" style="width: 80%" value="<?=$resultSet[$i]["password"]?>"></td>
 											</tr>
 											<tr>
-												<td><div class="textlienhe">Tên dự án :</div></td>
-												<td><input type="text" name="tenduan" style="width: 80%" value="<?=$resultSet[$i]["tenduan"]?>"></td>
-											</tr>
-											<tr>
-												<td><div class="textlienhe">Đường dẫn ảnh :</div></td>
-												<td><textarea name="duongdananh" style="width: 80%; overflow: auto;height: 200px"><?=$resultSet[$i]["duongdananh"]?></textarea></td>
-											</tr>
-											<tr>
-												<td colspan="2" style="text-align: center;"><input type="submit" name="" value="sửa dự án"></td>
+												<td colspan="2" style="text-align: center;"><input type="submit" name="" value="Cập nhật"></td>
 											</tr>
 										</form>
 									</table>
@@ -103,14 +95,12 @@
 								?>
 
 								<?php 
-								if(isset($_POST['id'])&&isset($_POST['diachi'])&&isset($_POST['tenduan'])&&isset($_POST['duongdananh']))
+								if(isset($_POST['username'])&&isset($_POST['password']))
 								{
 
-									$id=$_POST['id'];
-									$diachi=$_POST['diachi'];
-									$tenduan=$_POST['tenduan'];
-									$duongdananh=$_POST['duongdananh'];
-									$update = "Update duantrienkhai Set id = '" .$id."', diachi = '" .$diachi."', tenduan = '" .$tenduan."', duongdananh = '" .$duongdananh."' where id ='" . $id."'";
+									$username=$_POST['username'];
+									$password=$_POST['password'];
+									$update = "Update account Set username = '" .$username."', password = '" .$password."' where username ='" . $account."'";
 									$stmt = $pdo->prepare($update);	
 									$stmt->execute();
 									if($stmt != null){
