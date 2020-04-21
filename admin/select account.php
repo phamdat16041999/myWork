@@ -83,14 +83,9 @@
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<table class="tablelienhe">
 							<tr class="trlienhe">
-								<td class="tdlienhe">Họ và tên</td>
-								<td class="tdlienhe">Địa chỉ</td>
-								<td class="tdlienhe">Điện thoại</td>
-								<td class="tdlienhe">Gmail</td>
-								<td class="tdlienhe">Mục đích gửi</td>
-								<td class="tdlienhe">Tiêu đề</td>
-								<td class="tdlienhe">Nội dung</td>
-								<td class="tdlienhe">Ngày liên hệ</td>
+								<td class="tdlienhe">User name</td>
+								<td class="tdlienhe">Pass word</td>
+								<td class="tdlienhe" colspan="2"> Action</td>
 							</tr>
 							<?php 
 							$sql = "select * from account";
@@ -102,9 +97,10 @@
 							{
 								?>
 								<tr class="trlienhe">
-									<td class="tdlienhe"><?=$resultSet[$i]["id"]?></td>
 									<td class="tdlienhe"><?=$resultSet[$i]["username"]?></td>
 									<td class="tdlienhe"><?=$resultSet[$i]["password"]?></td>
+									<a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&Username=<?=$resultSet[$i]["id"]?>" title="">Update</a>
+									<a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&Username=<?=$resultSet[$i]["id"]?>" title="">Delete</a>
 
 								</tr>
 								<?php 
