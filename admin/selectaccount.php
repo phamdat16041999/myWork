@@ -101,7 +101,7 @@
 									<td class="tdlienhe"><?=$resultSet[$i]["username"]?></td>
 									<td class="tdlienhe"><?=$resultSet[$i]["password"]?></td>
 									<td><a href="updateaccount.php?username=<?=$username?>&password=<?=$password?>&account=<?=$resultSet[$i]["username"]?>" title="">Update</a></td>
-									<td><a href="updateduantrienkhai.php?username=<?=$username?>&password=<?=$password?>&account=<?=$resultSet[$i]["username"]?>" title="">Delete</a></td>
+									<td><a href="delete.php?username=<?=$username?>&password=<?=$password?>&account=<?=$resultSet[$i]["username"]?>" title="">Delete</a></td>
 
 								</tr>
 								<?php 

@@ -62,7 +62,7 @@
 							</div>
 							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
 								<div style="text-align: center;">
-									<H5>Cập nhật dự án</H5>
+									<H5>Cập nhật tài khoản</H5>
 								</div>
 								<?php 
 								if(isset($_GET['account']));
@@ -120,11 +120,34 @@
 										else
 											echo "Try again";
 									}
-								}
-								else{
-									echo "Bạn không thể sửa tài khoản này";
-								}
-								?>
+									if (username == "admin") {
+										$username=$_POST['username'];
+										$password=$_POST['password'];
+										if ($username != "admin") {
+											$update = "Update account Set username = '" .$username."', password = '" .$password."' where username ='" . $account."'";
+											$stmt = $pdo->prepare($update);	
+											$stmt->execute();
+											if($stmt != null){
+												?>
+												<script>
+
+													setTimeout(function()
+													{ 
+														window.location = "selectaccount.php?username=<?=$username?>&password=<?=$password?>"; 
+													}, 10);
+
+												</script>
+												<?php
+												echo "Product has update successfully!";
+											}
+											else
+												echo "Try again";
+										}
+									}
+									else{
+										echo "Bạn không thể sửa tài khoản này";
+									}
+									?>
 
 
 
@@ -132,27 +155,27 @@
 
 
 
-							</div>	
+								</div>	
+
+							</div>
+
+
 
 						</div>
-
-
-
 					</div>
-				</div>
-				<!-- phan lien he  -->
-				<?php 
-				include 'enpage.php';
-				?>
+					<!-- phan lien he  -->
+					<?php 
+					include 'enpage.php';
+					?>
 
-				<?php
+					<?php
+				}
+				else
+				{
+					echo 'Not found 404';
+				}
 			}
-			else
-			{
-				echo 'Not found 404';
-			}
-		}
-		?>
+			?>
 
-	</body>
-	</html>
+		</body>
+		</html>

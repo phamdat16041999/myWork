@@ -62,7 +62,7 @@
 							</div>
 							<div class="col-lg-12 col-md-12" style="margin-top: 20px; background-color: #F8FAD5; text-align: center; margin-bottom: 20px">
 								<div style="text-align: center;">
-									<H5>Thêm dự án</H5>
+									<H5>Thêm tài khoản</H5>
 								</div>
 								<table style="width:100%">
 									<form action="" method="POST" accept-charset="utf-8">
