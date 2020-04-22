@@ -17,11 +17,11 @@
 <body>
 	<?php include 'connect.php' ?>
 	<?php 
-	if(isset($_GET['username'])&&isset($_GET['password'])&&isset($_GET['idduantrienkhai']))
+	if(isset($_GET['username'])&&isset($_GET['password'])&&isset($_GET['account']))
 	{
 		$a=$_GET['username'];
 		$b=$_GET['password'];
-		$idduantrienkhai = $_GET["idduantrienkhai"];
+		$account = $_GET["account"];
 		$query = "SELECT username, password FROM account WHERE username = '" . $a . "' and password = '". $b ."'" ;
 		$stmt = $pdo->prepare($query);
 		$stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -35,12 +35,12 @@
 
 		if ((count($resultSet)>0))
 		{
-			$sql="delete from duantrienkhai where id='".$idduantrienkhai."'";
+			$sql="delete from account where username='".$account."'";
 			$stmt = $pdo->prepare($sql);	
 			$stmt->execute();
 			if($stmt != null){
 				echo "Product has delete successfully!";
-				header("Location: ./duantrienkhai.php?username=$username&password=$password");
+				header("Location: ./selectaccount.php?username=$username&password=$password");
 			}
 			else{
 				echo "Try again";
