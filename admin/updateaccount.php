@@ -100,30 +100,8 @@
 
 									$username=$_POST['username'];
 									$password=$_POST['password'];
-									if ($username != "admin") {
-										$update = "Update account Set username = '" .$username."', password = '" .$password."' where username ='" . $account."'";
-										$stmt = $pdo->prepare($update);	
-										$stmt->execute();
-										if($stmt != null){
-											?>
-											<script>
-
-												setTimeout(function()
-												{ 
-													window.location = "selectaccount.php?username=<?=$username?>&password=<?=$password?>"; 
-												}, 10);
-
-											</script>
-											<?php
-											echo "Product has update successfully!";
-										}
-										else
-											echo "Try again";
-									}
-									if ($username == "admin") 
+									if ($username != "admin") 
 									{
-										$username=$_POST['username'];
-										$password=$_POST['password'];
 										$update = "Update account Set username = '" .$username."', password = '" .$password."' where username ='" . $account."'";
 										$stmt = $pdo->prepare($update);	
 										$stmt->execute();
@@ -140,15 +118,18 @@
 											<?php
 											echo "Product has update successfully!";
 										}
-										else
+										else{
 											echo "Try again";
-										
+										}
+
+
 									}
-								}
-								else{
-									echo "Bạn không thể sửa tài khoản này";
+									else{
+										echo "Bạn không thể sửa tài khoản này";
+									}
 								}
 								?>
+
 
 
 
