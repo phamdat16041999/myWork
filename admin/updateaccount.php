@@ -97,10 +97,10 @@
 								<?php 
 								if(isset($_POST['username'])&&isset($_POST['password']))
 								{
+									$username=$_POST['username'];
+									$password=$_POST['password'];
 									if ($username != "admin") 
 									{
-										$username=$_POST['username'];
-										$password=$_POST['password'];
 										$update = "Update account Set username = '" .$username."', password = '" .$password."' where username ='" . $account."'";
 										$stmt = $pdo->prepare($update);	
 										$stmt->execute();
@@ -123,8 +123,6 @@
 									}
 									if ($username == "admin") 
 									{
-										$username=$_POST['username'];
-										$password=$_POST['password'];
 										$update = "Update account Set username = '" .$username."', password = '" .$password."' where username ='" . $account."'";
 										$stmt = $pdo->prepare($update);	
 										$stmt->execute();
