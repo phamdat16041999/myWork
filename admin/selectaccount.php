@@ -75,11 +75,14 @@
 							?>
 						</div>
 					</div>
-					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
+					<div style="background-color: #F8FAD5; width: 80%; height: auto;">
 						<form action="" method="POST" accept-charset="utf-8">
 							Nhập tài khoản cần tìm: <input type="text" name="searchlienhe" placeholder="Username">
 							<input type="submit" name="" value="Tìm kiếm">
 						</form>
+					</div>
+					<div style="width: 20%; height: auto;">
+						<a href="addaccount.php?username=<?=$username?>&password=<?=$password?>" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<table class="tablelienhe">
