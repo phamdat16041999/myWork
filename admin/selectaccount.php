@@ -82,8 +82,8 @@
 							<input type="submit" name="" value="Tìm kiếm">
 						</form>
 					</div>
-					<div style="width: 20%; height: auto;">
-						<a href="addaccount.php?username=<?=$username?>&password=<?=$password?>" title="" style="float: right;"><i class="material-icons" style="font-size:48px;color:red">add_circle_outline</i></a>
+					<div style="width: 20%; height: auto; background-color: #F8FAD5;">
+						<a href="addaccount.php?username=<?=$username?>&password=<?=$password?>" title="" style="float: right;"><i class="material-icons" style="font-size:25px;color:red">add_circle_outline</i></a>
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
 						<table class="tablelienhe">
