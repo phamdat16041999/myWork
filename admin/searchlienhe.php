@@ -75,7 +75,7 @@
 						</div>
 					</div>
 					<div style="background-color: #F8FAD5; width: 100%; height: auto;">
-						<form action="searchlienhe.php?date=searchlienhe" method="POST" accept-charset="utf-8">
+						<form action="" method="POST" accept-charset="utf-8">
 							Nhập ngày cần tìm: <input type="text" name="searchlienhe" placeholder="yyyy/mm/dd">
 							<input type="submit" name="" value="Tìm kiếm">
 						</form>
