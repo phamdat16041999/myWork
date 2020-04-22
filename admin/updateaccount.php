@@ -120,7 +120,7 @@
 										else
 											echo "Try again";
 									}
-									if (username == "admin") {
+									if ($username == "admin") {
 										$username=$_POST['username'];
 										$password=$_POST['password'];
 										if ($username != "admin") {
