@@ -1,2 +1,3 @@
 RewriteEngine On
-RewriteRule "a.html" "admin/login1.php"
+RewriteRule "login.html" "admin/login1.php"
+RewriteRule "^([a-zA-Z0-9]+)/([a-zA-Z0-9]+).html$" "admin.php?username=$1&password=$2"
