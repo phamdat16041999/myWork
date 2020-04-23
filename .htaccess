@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule "a.html" "Login1.php"
+RewriteRule "a.html" "admin/login1.php"
