@@ -1,3 +1,7 @@
 RewriteEngine On
 RewriteRule "login.html" "admin/login1.php"
-RewriteRule "^([a-zA-Z0-9]+)/([a-zA-Z0-9]+).html$" "admin/admin.php?username=admin&password=admin"
+RewriteRule "^admin/([a-zA-Z0-9]+)/([a-zA-Z0-9]+).html$" "admin/admin.php?username=$1&password=$2"
+
+RewriteRule "^duantrienkhai/([a-zA-Z0-9]+)/([a-zA-Z0-9]+).html$" "admin/duantrienkhai.php?username=$1&password=$2"
+RewriteRule "^themduan/([a-zA-Z0-9]+)/([a-zA-Z0-9]+).html$" "admin/addduan.php?username=$1&password=$2"
+RewriteRule "^suaduan/([a-zA-Z0-9]+)/([a-zA-Z0-9]+/([a-zA-Z0-9]+).html$" "admin/updateduantrienkhai.php?username=$1&password=$2&id=$3"
