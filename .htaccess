@@ -2,6 +2,7 @@ RewriteEngine On
 RewriteRule "login.html" "admin/login1.php"
 RewriteCond %{style.scc} !-f
 RewriteCond %{style.scc} !-d
+RewriteRule ^(admin) - [L]
 RewriteRule "^admin/([a-zA-Z0-9]+)/([a-zA-Z0-9]+).html$" "admin/admin.php?username=$1&password=$2"
 RewriteRule "^duan/([a-zA-Z0-9]+)/([a-zA-Z0-9]+).html$" "admin/duantrienkhai.php?username=$1&password=$2"
 
