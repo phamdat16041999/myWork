@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule "a.html" "Login1.php"
