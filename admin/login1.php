@@ -78,7 +78,7 @@
 				if ((count($resultSet)>0))
 				{
 
-					header("Location: ./admin/admin.php?username=$username&password=$password");
+					header("Location: ./admin.php?username=$username&password=$password");
 					
 				}
 				else
