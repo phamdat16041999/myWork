@@ -13,6 +13,14 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		#btnService.activeLorem{
+			display: none;
+		}
+		.demo20.toggle{
+			display: none;
+		}
+	</style>
 </head>
 <body>
 	
@@ -135,9 +143,9 @@ $(document).ready(function () {
 <div id="copyright" class="activeLorem">
 	
 
-<?php 
-include 'enpage.php';
-?>
+	<?php 
+	include 'enpage.php';
+	?>
 </div>
 
 </body>
