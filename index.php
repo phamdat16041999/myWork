@@ -93,6 +93,38 @@
 }
 </script>
 </div>
+<div class="demo20 toggle">
+	<?php 
+	include 'enpage.php';
+	?>
+</div>
+
+<script>
+// $(document).ready(function(){
+//   $("#btn-service").click(function(){
+//   	console.log('btn-service')
+//     // $("p").toggle();
+//     $("#copyright").toggleClass("active-lorem")
+//   });
+// });
+
+$(document).ready(function () {
+
+	$('#btnService').on('mouseover', function () {
+		console.log('btn-service')
+		$("#copyright").toggle()
+		$(".demo20").toggleClass("toggle")
+	});
+	$('#btnService').on('mouseout', function () {
+		console.log('btn-service')
+		$("#copyright").toggle()
+		$(".demo20").toggleClass("toggle")
+	});
+
+});
+</script>
+
+
 
 </div>
 

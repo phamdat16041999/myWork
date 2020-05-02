@@ -34,12 +34,12 @@
 						</div>
 					</div>
 					<script>
-						/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+
 						var dropdown = document.getElementsByClassName("dropdown-btn");
 						var i;
 
 						for (i = 0; i < dropdown.length; i++) {
-							dropdown[i].addEventListener("click", function() {
+							dropdown[i].addEventListener("mouseover", function() {
 								this.classList.toggle("active");
 								var dropdownContent = this.nextElementSibling;
 								if (dropdownContent.style.display === "block") {
@@ -47,7 +47,19 @@
 								} else {
 									dropdownContent.style.display = "block";
 								}
+
 							});
+							dropdown[i].addEventListener("mouseout", function() {
+								this.classList.toggle("active");
+								var dropdownContent = this.nextElementSibling;
+								if (dropdownContent.style.display === "none") {
+									dropdownContent.style.display = "block";
+								} else {
+									dropdownContent.style.display = "none";
+								}
+
+							});
+
 						}
 					</script>
 					<div class="col-lg-12" style="text-align: center;">
