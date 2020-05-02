@@ -132,9 +132,13 @@ $(document).ready(function () {
 
 </div>
 <!-- phan lien he  -->
+<div id="copyright" class="activeLorem">
+	
+
 <?php 
 include 'enpage.php';
 ?>
+</div>
 
 </body>
 </html>
