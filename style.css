@@ -206,6 +206,7 @@ li a:hover {
 	width: 100%;
 	cursor: pointer;
 	outline: none;
+	text-align: left;
 }
 
 /* On mouse-over */
