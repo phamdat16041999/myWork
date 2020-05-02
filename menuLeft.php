@@ -29,7 +29,7 @@
 					</div>
 					<div class="col-lg-12 col-md-12">
 						<div class="sidenav">
-							<button class="dropdown-btn">
+							<button class="dropdown-btn" style="text-align: left;">
 								<a href="duantrienkhai.php" title=""><h3 class="texttitle">Dự án</h3></a>
 								<i class="fa fa-caret-down"></i>
 							</button>
