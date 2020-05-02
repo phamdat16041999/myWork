@@ -9,7 +9,7 @@
 					<div class="col-lg-12 col-md-12">
 						<div class="sidenav" style="line-height: 1.15;">
 							<button class="dropdown-btn" id="btnService">
-								<div style="width: 100%; margin-left: 5%;">
+								<div >
 									<h3 class="texttitle">Dịch vụ</h3>
 								</div>
 								<i class="fa fa-caret-down"></i>
