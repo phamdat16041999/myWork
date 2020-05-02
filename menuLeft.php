@@ -67,7 +67,7 @@
 					</script>
 					<div class="col-lg-12" style="text-align: center;">
 						<div>
-							<img src="img/hotline1.jpg" alt="" style="max-width: 100%; height: 50px;">
+							<img src="img/hotline.jpg" alt="" style="max-width: 100%; height: 50px;">
 						</div>
 					</div>
 				</div>
