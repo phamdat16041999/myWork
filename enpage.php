@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<div id="copyright" class="activeLorem">
+	
 		
 		<div id="footer" style="margin-top: 10%">
 			<div class="endpage">
@@ -25,6 +25,6 @@
 			</div>
 		</div>
 
-	</div>
+	
 </body>
 </html>
