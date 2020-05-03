@@ -14,7 +14,7 @@
 		}
 		#nav1 li.list .heading{
 			background: #CC681D;
-			font-size: 22px;
+			font-size: 20px;
 			padding: 8px 0 8px 15px;
 
 		}
@@ -160,23 +160,6 @@
 					</div>
 				</div>
 			</div>
-			<script >
-				$(document).ready(function () {
-
-					$('#btnService').on('mouseover', function () {
-						console.log('btn-service')
-						$("#copyright").toggle()
-						$(".demo20").toggleClass("toggle")
-					});
-					$('#btnService').on('mouseout', function () {
-						console.log('btn-service')
-						$("#copyright").toggle()
-						$(".demo20").toggleClass("toggle")
-					});
-
-				});
-
-			</script>
 			<script>
 				$(document).ready(function() {
 					$("#nav1 .list").hover(
