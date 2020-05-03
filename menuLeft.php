@@ -144,7 +144,7 @@
 
 
 					<!--  -->
-					<div class="col-lg-12" style="text-align: center;margin-bottom: 50px;">
+					<div class="col-lg-12" style="text-align: center;margin-top: 50px;">
 						<div>
 							<img src="img/hotline.png" alt="" style="max-width: 100%; height: 75px;">
 						</div>
