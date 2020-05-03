@@ -24,7 +24,7 @@
 			float: none;
 			text-decoration: none;
 			color: white;
-			font-size: 15px;
+			font-size: 12px;
 			font-weight: bold;
 			padding-left: 20px;
 			background: #636e72;
