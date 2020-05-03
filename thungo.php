@@ -66,7 +66,7 @@
 							</div>
 							<br>
 							<div style="text-indent: 20px">
-								Đồng hành cùng sự thành công của Quý Doanh nghiệp là niềm tự hào của chúng tôi. Với khát vọng <span style="font-weight: 600">“Nâng tầm doanh nghiệp Việt”</span>, HANAGO rất hy vọng có cơ hội hợp tác và góp phần vào sự phát triển thịnh vượng của quý doanh nghiệp trong xu thế hội nhập toàn cầu
+								Đồng hành cùng sự thành công của Quý Doanh nghiệp là niềm tự hào của chúng tôi. Với khát vọng <span style="font-weight: 600">“Nâng tầm doanh nghiệp Việt”</span>, <span style="font-weight: 600">HANAGO</span> rất hy vọng có cơ hội hợp tác và góp phần vào sự phát triển thịnh vượng của quý doanh nghiệp trong xu thế hội nhập toàn cầu
 
 							</div>
 							<br>
