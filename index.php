@@ -22,7 +22,7 @@
 		}
 	</style>
 </head>
-<body>
+<body style="height: auto;">
 	
 	<div class="container">
 		<div class="row">
