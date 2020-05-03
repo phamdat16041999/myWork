@@ -61,12 +61,16 @@
 		<div class="row" style="margin-top: 40px">
 			<div class="col-lg-12 col-md-6">
 				<ul id="nav1">
-					<li class="list" id="btnService"><a href="#" class="heading">Menu Heading 1</a>
+					<li class="list" id="btnService"><a href="#" class="heading">Dịch vụ</a>
 						<ul class="head">
-							<li><a href="#">Stage1</a></li>
-							<li><a href="#">Stage2</a></li>
-							<li><a href="#">Stage3</a></li>
-							<li><a href="#">Stage4</a></li>
+							<li><a href="dichvu.php?nameimg=dichvu/dichvu1.png" title="" class="textContent">- Thi công công trình dân dụng, công nghiệp</a></li>
+							<li><a href="dichvu.php?nameimg=dichvu/dichvu2.png" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a></li>
+							<li><a href="dichvu.php?nameimg=dichvu/dichvu3.png" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a></li>
+							<li><a href="dichvu.php?nameimg=dichvu/dichvu4.png" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a></li>
+							<li><a href="dichvu.php?nameimg=dichvu/dichvu5.png" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a></li>
+							<li><a href="dichvu.php?nameimg=dichvu/dichvu6.png" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a></li>
+							<li><a href="dichvu.php?nameimg=dichvu/dichvu7.png" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a></li>
+							<li><a href="dichvu.php?nameimg=dichvu/dichvu8.png" title="" class="textContent">- Quản lý dự án công trình xây dựng</a></li>
 						</ul>
 					</li>
 					<li class="list" id="btnService"><a href="#" class="heading">Menu Heading 2</a>
