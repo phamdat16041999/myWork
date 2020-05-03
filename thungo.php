@@ -56,7 +56,7 @@
 							</div>
 							<br>
 							<div style="text-indent: 20px">
-								Với tầm nhìn dài hạn và quan điểm phát triển bền vững, <span style="font-weight: 600">TESA</span> Hướng tới trở thành đơn vị dẫn đầu thị trường về dịch vụ tư vấn tổng thể doanh nghiệp và trực tiếp triển khai những dịch vụ tư vấn tổng thể doanh nghiệp và trực tiếp triển khai những dịch vụ đã tư vấn sao cho phù hợp với tình hình phát triển của doanh nghiệp
+								Với tầm nhìn dài hạn và quan điểm phát triển bền vững, <span style="font-weight: 600">HANAGO</span> Hướng tới trở thành đơn vị dẫn đầu thị trường về dịch vụ tư vấn tổng thể doanh nghiệp và trực tiếp triển khai những dịch vụ tư vấn tổng thể doanh nghiệp và trực tiếp triển khai những dịch vụ đã tư vấn sao cho phù hợp với tình hình phát triển của doanh nghiệp
 
 							</div>
 							<br>
@@ -66,7 +66,7 @@
 							</div>
 							<br>
 							<div style="text-indent: 20px">
-								Đồng hành cùng sự thành công của Quý Doanh nghiệp là niềm tự hào của chúng tôi. Với khát vọng <span style="font-weight: 600">“Nâng tầm doanh nghiệp Việt”</span>, TESA rất hy vọng có cơ hội hợp tác và góp phần vào sự phát triển thịnh vượng của quý doanh nghiệp trong xu thế hội nhập toàn cầu
+								Đồng hành cùng sự thành công của Quý Doanh nghiệp là niềm tự hào của chúng tôi. Với khát vọng <span style="font-weight: 600">“Nâng tầm doanh nghiệp Việt”</span>, HANAGO rất hy vọng có cơ hội hợp tác và góp phần vào sự phát triển thịnh vượng của quý doanh nghiệp trong xu thế hội nhập toàn cầu
 
 							</div>
 							<br>
