@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<link rel="stylesheet" type="text/css" href="style1.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<title></title>
 	<style>
 		#nav1{
@@ -68,7 +57,7 @@
 	</style>
 </head>
 <body>
-	<div class="col-lg-4 col-md-12" style="background-color: #CC681D; border-top-left-radius:20px; padding: 10px; border-bottom-left-radius: 20px; overflow-x: hidden;">
+	<div class="col-lg-3 col-md-3" style="background-color: #CC681D; border-top-left-radius:20px; padding: 10px; border-bottom-left-radius: 20px; overflow-x: hidden;">
 		<div class="row" style="margin-top: 40px">
 			<div class="col-lg-12 col-md-6">
 				<ul id="nav1">
@@ -187,6 +176,18 @@
 
 				});
 
+			</script>
+			<script>
+				$(document).ready(function() {
+					$("#nav1 .list").hover(
+						function() {
+							
+							$(this).find('.head').slideDown();
+						},
+						function() {
+							$(this).find('.head').slideUp();
+						});
+				});
 			</script>
 		</body>
 		</html>
