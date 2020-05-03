@@ -13,7 +13,7 @@
 			float: none;
 		}
 		#nav1 li.list .heading{
-			background: #636e72;
+			background: #CC681D;
 			font-size: 20px;
 			padding: 8px 0 8px 15px;
 
@@ -27,7 +27,7 @@
 			font-size: 15px;
 			font-weight: bold;
 			padding-left: 20px;
-			background: #C0C0C0;
+			background: #636e72;
 			letter-spacing: 4px;
 		}
 
