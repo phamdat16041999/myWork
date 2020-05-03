@@ -316,6 +316,7 @@ img {vertical-align: middle;}
 .project {
 	position: relative;
 	width: 100%;
+	background-color: white;
 }
 
 .imageProject {
