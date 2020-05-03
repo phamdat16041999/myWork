@@ -156,7 +156,7 @@
 					$("#nav1 .list").hover(
 						function() {
 							
-							$(this).find('.head').slideDown();
+							$(this).find('.head').slideDown(50);
 						},
 						function() {
 							$(this).find('.head').slideUp();
