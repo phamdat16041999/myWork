@@ -13,7 +13,7 @@
 			float: none;
 		}
 		#nav1 li.list .heading{
-			background: #CC681D;
+			background: #636e72;
 			font-size: 20px;
 			padding: 8px 0 8px 15px;
 
@@ -24,7 +24,7 @@
 			float: none;
 			text-decoration: none;
 			color: white;
-			font-size: 20px;
+			font-size: 15px;
 			font-weight: bold;
 			padding-left: 20px;
 			background: #C0C0C0;
@@ -73,22 +73,9 @@
 							<li><a href="dichvu.php?nameimg=dichvu/dichvu8.png" title="" class="textContent">- Quản lý dự án công trình xây dựng</a></li>
 						</ul>
 					</li>
-					<li class="list" id="btnService"><a href="#" class="heading">Menu Heading 2</a>
-						<ul class="head">
-							<li><a href="#">Stage1</a></li>
-							<li><a href="#">Stage2</a></li>
-							<li><a href="#">Stage3</a></li>
-							<li><a href="#">Stage4</a></li>
-						</ul>
+					<li class="list" id="btnService"><a href="duantrienkhai.php" class="heading">Dự án triển khai</a>
 					</li>
-					<li class="list" id="btnService"><a href="#" class="heading">Menu Heading 3</a>
-						<ul class="head">
-							<li><a href="#">Stage1</a></li>
-							<li><a href="#">Stage2</a></li>
-							<li><a href="#">Stage3</a></li>
-							<li><a href="#">Stage4</a></li>
-						</ul>
-					</li>
+
 				</ul>
 			</div>
 					<!-- <div class="col-lg-12 col-md-6">
