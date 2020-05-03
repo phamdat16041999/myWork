@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+		<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<title></title>
 	<style>
 		#nav1{
@@ -54,13 +65,12 @@
 			display: none;
 
 		}
-
 	</style>
 </head>
 <body>
-	<div class="col-lg-3 col-md-3" id="boderleft">
+	<div class="col-lg-4 col-md-12" style="background-color: #CC681D; border-top-left-radius:20px; padding: 10px; border-bottom-left-radius: 20px; overflow-x: hidden;">
 		<div class="row" style="margin-top: 40px">
-			<div class="col-lg-12 col-md-12">
+			<div class="col-lg-12 col-md-6">
 				<ul id="nav1">
 					<li class="list" id="btnService"><a href="#" class="heading">Menu Heading 1</a>
 						<ul class="head">
@@ -88,17 +98,80 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-lg-12 col-md-12">
-				<div class="sidenav">
-					<button class="dropdown-btn" style="text-align: left;">
-						<a href="duantrienkhai.php" title=""><h3 class="texttitle">Dự án</h3></a>
-						<i class="fa fa-caret-down"></i>
-					</button>
+					<!-- <div class="col-lg-12 col-md-6">
+						<div class="sidenav" style="line-height: 1.15;">
+							<button class="dropdown-btn" id="btnService">
+								<div style="width: 100%; margin-left: 5%;">
+									<h3>Dịch vụ</h3>
+								</div>
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-container">
+								<a href="dichvu.php?nameimg=dichvu/dichvu1.jpg" title="" class="textContent">- Thi công công trình dân dụng, công nghiệp</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu2.jpg" title="" class="textContent">- Thi công công trình giao thông, Thủy Lợi</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu3.jpg" title="" class="textContent">- Thi công công trình hạ tầng kỹ thuật</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu4.jpg" title="" class="textContent">- Tư vấn giám sát công trình dân dụng, công nghiệp</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu5.jpg" title="" class="textContent">- Tư vấn giám sát công trình giao thông, Thủy Lợi</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu6.jpg" title="" class="textContent">- Tư vấn giám sát công trình hạ tầng kỹ thuật</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu7.jpg" title="" class="textContent">- Lập dự án đầu tư xây dựng công trình</a><br>
+								<a href="dichvu.php?nameimg=dichvu/dichvu8.jpg" title="" class="textContent">- Quản lý dự án công trình xây dựng</a><br>
+							</div>
 
+						</div>
+					</div> -->
+					<!-- <div class="col-lg-12 col-md-6">
+						<div class="sidenav">
+							<button class="dropdown-btn">
+								<a href="duantrienkhai.php" title=""><h3>Dự án triển khai</h3></a>
+								<i class="fa fa-caret-down"></i>
+							</button>
+
+						</div>
+					</div> -->
+					<!-- <script>
+
+						var dropdown = document.getElementsByClassName("dropdown-btn");
+						var i;
+
+						for (i = 0; i < dropdown.length; i++) {
+							dropdown[i].addEventListener("mouseover", function() {
+								this.classList.toggle("active");
+								var dropdownContent = this.nextElementSibling;
+								if (dropdownContent.style.display === "block") {
+									dropdownContent.style.display = "none";
+								} else {
+									dropdownContent.style.display = "block";
+								}
+
+							});
+							dropdown[i].addEventListener("mouseout", function() {
+								this.classList.toggle("active");
+								var dropdownContent = this.nextElementSibling;
+								if (dropdownContent.style.display === "none") {
+									dropdownContent.style.display = "block";
+								} else {
+									dropdownContent.style.display = "none";
+								}
+
+							});
+
+						}
+					</script> -->
+					<!--  -->
+
+					
+
+
+
+					<!--  -->
+					<div class="col-lg-12" style="text-align: center;margin-bottom: 50px;">
+						<div>
+							<img src="img/hotline.PNG" alt="" style="max-width: 100%; height: 75px;">
+						</div>
+					</div>
 				</div>
 			</div>
-			<script>
-
+			<script >
 				$(document).ready(function () {
 
 					$('#btnService').on('mouseover', function () {
@@ -115,15 +188,5 @@
 				});
 
 			</script>
-			<div class="col-lg-12" style="text-align: center;">
-				<div>
-					<img src="img/hotline.jpg" alt="" style="max-width: 100%; height: 50px;">
-				</div>
-			</div>
-		</div>
-
-
-
-	</div>
-</body>
-</html>
+		</body>
+		</html>
